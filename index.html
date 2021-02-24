@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikel Eguiluz | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Ropa+Sans:ital@0;1&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/generics.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/labelhack.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
+
+  <!-- code highlighter -->>
+  <link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/atelier-estuary-dark.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+  <script src="./main.js" type="module"></script>
+</head>
+
+<body>
+  <div class="bg-image"></div>
+  <!-- face navigation -->
+  <input type="radio" name="face" class="hidden" id="front-face-check">
+  <input type="radio" name="face" class="hidden" id="right-face-check">
+  <input type="radio" name="face" class="hidden" id="back-face-check">
+  <input type="radio" name="face" class="hidden" id="left-face-check">
+  <input type="radio" name="face" class="hidden" id="top-face-check">
+  <input type="radio" name="face" class="hidden" id="bottom-face-check-index" checked>
+  <input type="radio" name="face" class="hidden" id="bottom-face-check-styles">
+  <input type="radio" name="face" class="hidden" id="bottom-face-check-main">
+  <!-- burger -->
+  <input type="checkbox" id="burger-checkbox" class="hidden" checked>
+  <!-- menu behaviour -->
+  <input type="checkbox" id="main-extend" class="hidden">
+  <input type="checkbox" id="about-me-extend" class="hidden">
+  <input type="checkbox" id="portfolio-extend" class="hidden">
+  <input type="checkbox" id="source-extend" class="hidden">
+  <!-- ----------------- -->
+  <div class="container">
+    <div class="sidebar">
+      <ul class="main-menu">
+        <li><label for="about-me-extend" class="lblbtn">
+            <i class="fas fa-angle-right"></i>About me
+          </label>
+          <ul class="about-me-menu">
+            <li><label for="front-face-check" class="lblbtn about-me-lbl">
+                <i class="fas fa-user-astronaut"></i> Contact
+              </label></li>
+            <li><label for="right-face-check" class="lblbtn">
+                <i class="far fa-file-alt"></i> C.V.
+              </label></li>
+          </ul>
+        </li>
+        <li><label for="portfolio-extend" class="lblbtn">
+            <i class="fas fa-angle-right"></i> Portfolio
+          </label>
+          <ul class="portfolio-menu">
+            <li><label for="back-face-check" class="lblbtn">
+                <i class="fab fa-css3-alt"></i> Css
+              </label></li>
+            <li><label for="top-face-check" class="lblbtn">
+                <i class="fab fa-js-square"></i> JavaScript
+              </label></li>
+          </ul>
+        </li>
+        <li><label for="source-extend" class="lblbtn">
+            <i class="fas fa-angle-right"></i> Source
+          </label>
+          <ul class="source-menu">
+            <li><label for="bottom-face-check-index" class="lblbtn">
+                <i class="fas fa-code"></i> index.html
+              </label></li>
+            <li><label for="bottom-face-check-styles" class="lblbtn">
+                <i class="fab fa-sass"></i> styles.scss
+              </label></li>
+            <li><label for="bottom-face-check-main" class="lblbtn">
+                <i class="fab fa-js-square"></i>&nbsp;main.js
+              </label></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="header">
+      <label for="main-extend" class="lblbtn">
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>Menu
+      </label>
+      <h1>Mikel Eguiluz</h1>
+      <div class="alignment-keeper"></div>
+    </div>
+    <div class="content-wrapper">
+      <!-- Contact -->
+      <div class="content front-face">
+        <div class="content-header">
+          <label for="back-face-check" class="lblbtn"><i class="fas fa-angle-left"></i></label>
+          <h2>Contact</h2>
+          <label for="right-face-check" class="lblbtn">
+            <i class="fas fa-angle-right"></i>
+          </label>
+        </div>
+        <div class="box content-item">
+          <h3>Lorem</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, at reiciendis! Est esse sunt, culpa
+            reiciendis quisquam doloribus maxime deserunt voluptatum error ex! Dolorum expedita dolores tenetur, nemo
+            cumque error.</p>
+        </div>
+        <div class="box content-item contact-form">
+
+          <h3>Contact Me</h3>
+          <div>
+            <input id="name" type="text" placeholder="Name" size="1" required>
+            <input id="phone" type="text" placeholder="Phone" size="1">
+          </div>
+          <input id="email" type="text" placeholder="Email" required>
+          <textarea id="message" placeholder="Message" required></textarea>
+          <button type="button">Send</button>
+
+        </div>
+      </div>
+
+      <!-- Curriculum Vitae -->
+      <div class="content right-face">
+        <div class="content-header">
+          <label for="front-face-check" class="lblbtn"><i class="fas fa-angle-left"></i></label>
+          <h2>C.V.</h2>
+          <label for="back-face-check" class="lblbtn">
+            <i class="fas fa-angle-right"></i>
+          </label>
+        </div>
+        <div class="box content-item">
+          <h3>Education</h3>
+          <ul>
+            <li>2020-2021 The Jump Academy: Full stack web Development</li>
+            <li>2011-2013 Colegio Montessori (Spain): Multiplatform Software Development.</li>
+            <li>2004-2009 Zaragoza University: Completed 4 out of 5 years of the Geology undergraduate degree</li>
+          </ul>
+
+        </div>
+        <div class="box content-item">
+          <h3>Work History</h3>
+          <ul>
+            <li>2019-current: Zumba Instructor. Self employed.</li>
+            <li>2017-current: Supervisor and hardware tester, Cex Kilburn.</li>
+            <li>2017: Temporary work Hornymans at Hays (6 months)</li>
+            <li>2015-2016: Erasmus+ European Voluntary Service at Amarante (Portugal)</li>
+            <li>2015: Software Developer, ATTSF (Association of technical workers without borders). (6 months)</li>
+          </ul>
+        </div>
+        <div class="box content-item">
+          <h3>Languages</h3>
+          <ul>
+            <li> Spanish: Mother Tongue</li>
+            <li> English: Fluent</li>
+            <li> Portuguese: Conversational</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Portfolio css -->
+      <div class="content back-face">
+        <div class="content-header">
+          <label for="right-face-check" class="lblbtn"><i class="fas fa-angle-left"></i></label>
+          <h2>Portfolio - CSS</h2>
+          <label for="front-face-check" class="lblbtn">
+            <i class="fas fa-angle-right"></i>
+          </label>
+        </div>
+        <div class="box content-item portfolio-piece">
+          <h3>Svg Logo</h3>
+          <div class="portfolio-piece-thumbnail"><iframe src="./tailleferreLogo/tailleferre.html"
+              frameborder="0"></iframe></div>
+          <div class="portfolio-piece-footer">
+            <div><a href="#">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+            <div><a href="https://codepen.io/MikelEguiluz/pen/jOqdGeY" target="_blank" rel="noopener">
+                <i class="fab fa-codepen"></i><span class="sr-only">Codepen. Opens in new Tab</span>
+              </a></div>
+            <div><a href="#">
+                <i class="fas fa-cloud-download-alt"></i><span class="sr-only">Download</span>
+              </a></div>
+          </div>
+        </div>
+        <div class="box content-item portfolio-piece">
+          <h3>Dropdown Menus</h3>
+          <div class="portfolio-piece-thumbnail"><img src="/assets/images/Comboboxes-thumbnail.png" alt=""></div>
+          <div class="portfolio-piece-footer">
+            <div><a href="#">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+            <div><a href="https://codepen.io/MikelEguiluz/pen/gOMrmZK" target="_blank" rel="noopener">
+                <i class="fab fa-codepen"></i><span class="sr-only">Codepen. Opens in new Tab</span>
+              </a></div>
+          </div>
+        </div>
+        <div class="box content-item portfolio-piece">
+          <h3>Placeholder PageHomage</h3>
+          <div class="portfolio-piece-thumbnail"><img src="/assets/images/me.png" alt=""></div>
+          <div class="portfolio-piece-footer">
+            <div><a href="#">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+            <div><a href="https://codepen.io/MikelEguiluz/pen/jOqdGeY" target="_blank" rel="noopener">
+                <i class="fab fa-codepen"></i><span class="sr-only">Codepen. Opens in new Tab</span>
+              </a></div>
+            <div><a href="#">
+                <i class="fas fa-cloud-download-alt"></i><span class="sr-only">Download</span>
+              </a></div>
+          </div>
+        </div>
+        <div class="box content-item portfolio-piece">
+          <h3>Exercise</h3>
+          <div class="portfolio-piece-thumbnail"></div>
+          <div class="portfolio-piece-footer">
+            <div><a href="#">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+            <div><a href="https://codepen.io/MikelEguiluz/pen/jOqdGeY" target="_blank" rel="noopener">
+                <i class="fab fa-codepen"></i><span class="sr-only">Codepen. Opens in new Tab</span>
+              </a></div>
+            <div><a href="#">
+                <i class="fas fa-cloud-download-alt"></i><span class="sr-only">Download</span>
+              </a></div>
+          </div>
+        </div>
+        <div class="box content-item portfolio-piece">
+          <h3>Event Page</h3>
+          <div class="portfolio-piece-thumbnail"></div>
+          <div class="portfolio-piece-footer">
+            <div><a href="#">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+            <div><a href="https://codepen.io/MikelEguiluz/pen/jOqdGeY" target="_blank" rel="noopener">
+                <i class="fab fa-codepen"></i><span class="sr-only">Codepen. Opens in new Tab</span>
+              </a></div>
+            <div><a href="#">
+                <i class="fas fa-cloud-download-alt"></i><span class="sr-only">Download</span>
+              </a></div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio js-->
+      <div class="content top-face">
+        <div class="content-header">
+          <!-- <label for="top-face-check" class="lblbtn"><i class="fas fa-angle-left"></i></label> -->
+          <h2>Portfolio - JavaScript </h2>
+          <!-- <label for="back-face-check" class="lblbtn">
+            <i class="fas fa-angle-right"></i>
+          </label> -->
+        </div>
+        <div class="box content-item portfolio-piece">
+          <h3>Svg Logo</h3>
+          <div class="portfolio-piece-thumbnail"><iframe src="./tailleferreLogo/tailleferre.html"
+              frameborder="0"></iframe>
+          </div>
+          <div class="portfolio-piece-footer">
+            <div><a href="#">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+            <div><a href="https://codepen.io/MikelEguiluz/pen/jOqdGeY" target="_blank" rel="noopener">
+                <i class="fab fa-codepen"></i><span class="sr-only">Codepen. Opens in new Tab</span>
+              </a></div>
+            <div><a href="#">
+                <i class="fas fa-cloud-download-alt"></i><span class="sr-only">Download</span>
+              </a></div>
+          </div>
+        </div>
+        <div class="box content-item portfolio-piece">
+          <h3>Dropdown Menus</h3>
+          <div class="portfolio-piece-thumbnail"><img src="/assets/images/Comboboxes-thumbnail.png" alt=""></div>
+          <div class="portfolio-piece-footer">
+            <div><a href="#">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+            <div><a href="https://codepen.io/MikelEguiluz/pen/gOMrmZK" target="_blank" rel="noopener">
+                <i class="fab fa-codepen"></i><span class="sr-only">Codepen. Opens in new Tab</span>
+              </a></div>
+          </div>
+        </div>
+        <div class="box content-item portfolio-piece">
+          <h3>Placeholder PageHomage</h3>
+          <div class="portfolio-piece-thumbnail"><img src="/assets/images/me.png" alt=""></div>
+          <div class="portfolio-piece-footer">
+            <div><a href="#">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+            <div><a href="https://codepen.io/MikelEguiluz/pen/jOqdGeY" target="_blank" rel="noopener">
+                <i class="fab fa-codepen"></i><span class="sr-only">Codepen. Opens in new Tab</span>
+              </a></div>
+            <div><a href="#">
+                <i class="fas fa-cloud-download-alt"></i><span class="sr-only">Download</span>
+              </a></div>
+          </div>
+        </div>
+        <div class="box content-item portfolio-piece">
+          <h3>Exercise</h3>
+          <div class="portfolio-piece-thumbnail"></div>
+          <div class="portfolio-piece-footer">
+            <div><a href="#">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+            <div><a href="https://codepen.io/MikelEguiluz/pen/jOqdGeY" target="_blank" rel="noopener">
+                <i class="fab fa-codepen"></i><span class="sr-only">Codepen. Opens in new Tab</span>
+              </a></div>
+            <div><a href="#">
+                <i class="fas fa-cloud-download-alt"></i><span class="sr-only">Download</span>
+              </a></div>
+          </div>
+        </div>
+        <div class="box content-item portfolio-piece">
+          <h3>Event Page</h3>
+          <div class="portfolio-piece-thumbnail"></div>
+          <div class="portfolio-piece-footer">
+            <div><a href="#">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+            <div><a href="https://codepen.io/MikelEguiluz/pen/jOqdGeY" target="_blank" rel="noopener">
+                <i class="fab fa-codepen"></i><span class="sr-only">Codepen. Opens in new Tab</span>
+              </a></div>
+            <div><a href="#">
+                <i class="fas fa-cloud-download-alt"></i><span class="sr-only">Download</span>
+              </a></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="content bottom-face">
+
+        <div class="source-code" id="html-code-showcase">
+
+        </div>
+        <div class="source-code" id="css-code-showcase">
+          <pre><code> csss dgfdsdsf</code></pre>
+        </div>
+        <div class="source-code" id="main-code-showcase">
+          <pre><code> main  sfgfdsd</code></pre>
+        </div>
+      </div>
+    </div>
+    <footer class="box footer">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/mikel-eguiluz-ayerra/" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i><span class="sr-only">LinkedIn. Opens in new Tab</span>
+          </a></li>
+        <li><a href="https://github.com/Mikel-Eguiluz" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i><span class="sr-only">Github. Opens in new Tab</span>
+          </a></li>
+        <li><a href="https://codepen.io/MikelEguiluz" target="_blank" rel="noopener">
+            <i class="fab fa-codepen"></i><span class="sr-only">Codepen. Opens in new Tab</span>
+          </a></li>
+        <li><a href="mailto:gusidam@gmail.com">
+            <i class="fas fa-envelope"></i><span class="sr-only">E-mail me</span>
+          </a></li>
+        <li><a href="tel:07823647924">
+            <i class="fas fa-phone-square"></i><span class="sr-only">Phone</span>
+          </a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

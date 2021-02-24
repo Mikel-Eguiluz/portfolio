@@ -1,0 +1,188 @@
+#front-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
+  background-color: #094873;
+}
+
+#front-face-check:checked ~ div.container div.header h1::before {
+  content: "Contact - About me - ";
+}
+
+#right-face-check:checked ~ div.container div.content-wrapper {
+  -webkit-transform: translate(-50%) rotateY(-90deg);
+          transform: translate(-50%) rotateY(-90deg);
+}
+
+#right-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(1) > ul > li:nth-child(2) > label {
+  background-color: #094873;
+}
+
+#right-face-check:checked ~ div.container div.header h1::before {
+  content: "C.V. - About me - ";
+}
+
+#back-face-check:checked ~ div.container div.content-wrapper {
+  -webkit-transform: translate(-50%) rotateY(-90deg) rotateY(-90deg) translate(-50%);
+          transform: translate(-50%) rotateY(-90deg) rotateY(-90deg) translate(-50%);
+}
+
+#back-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(2) > ul > li:nth-child(1) > label {
+  background-color: #094873;
+}
+
+#back-face-check:checked ~ div.container div.header h1::before {
+  content: "CSS - Portfolio - ";
+}
+
+#top-face-check:checked ~ div.container div.content-wrapper {
+  -webkit-transform: translate(0, 50%) rotatex(-90deg);
+          transform: translate(0, 50%) rotatex(-90deg);
+}
+
+#top-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(2) > ul > li:nth-child(2) > label {
+  background-color: #094873;
+}
+
+#top-face-check:checked ~ div.container div.header h1::before {
+  content: "JavaScript - Portfolio - ";
+}
+
+#bottom-face-check-index:checked ~ div.container div.content-wrapper {
+  -webkit-transform: translate(0, -50%) rotatex(90deg);
+          transform: translate(0, -50%) rotatex(90deg);
+}
+
+#bottom-face-check-index:checked ~ div.container div.sidebar > ul > li:nth-child(3) > ul > li:nth-child(1) > label {
+  background-color: #094873;
+}
+
+#bottom-face-check-index:checked ~ div.container div.header h1::before {
+  content: "Source - Index.html - Portfolio - ";
+}
+
+#bottom-face-check-index:checked ~ div.container div #html-code-showcase {
+  display: block;
+}
+
+#bottom-face-check-styles:checked ~ div.container div.content-wrapper {
+  -webkit-transform: translate(0, -50%) rotatex(90deg);
+          transform: translate(0, -50%) rotatex(90deg);
+}
+
+#bottom-face-check-styles:checked ~ div.container div.sidebar > ul > li:nth-child(3) > ul > li:nth-child(2) > label {
+  background-color: #094873;
+}
+
+#bottom-face-check-styles:checked ~ div.container div.header h1::before {
+  content: "Source - Styles.sass - Portfolio - ";
+}
+
+#bottom-face-check-styles:checked ~ div.container div #css-code-showcase {
+  display: block;
+}
+
+#bottom-face-check-main:checked ~ div.container div.content-wrapper {
+  -webkit-transform: translate(0, -50%) rotatex(90deg);
+          transform: translate(0, -50%) rotatex(90deg);
+}
+
+#bottom-face-check-main:checked ~ div.container div.sidebar > ul > li:nth-child(3) > ul > li:nth-child(3) > label {
+  background-color: #094873;
+}
+
+#bottom-face-check-main:checked ~ div.container div.header h1::before {
+  content: "Source - Main.js - Portfolio - ";
+}
+
+#bottom-face-check-main:checked ~ div.container div #main-code-showcase {
+  display: block;
+}
+
+.burger {
+  cursor: pointer;
+  z-index: 5;
+  height: 16px;
+  width: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
+  -webkit-margin-end: 0.5rem;
+          margin-inline-end: 0.5rem;
+}
+
+.burger span {
+  border-radius: 2px;
+  height: 0.3rem;
+  -webkit-margin-after: 0.2rem;
+          margin-block-end: 0.2rem;
+  width: 80%;
+  background: #cccccc;
+  border-radius: 5% / 50%;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-child(1) {
+  -webkit-transform: translatey(5px) rotate(45deg);
+          transform: translatey(5px) rotate(45deg);
+}
+
+.burger span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger span:nth-child(3) {
+  -webkit-transform: translatey(-5px) rotate(-45deg);
+          transform: translatey(-5px) rotate(-45deg);
+}
+
+#main-extend:checked ~ div.container {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "header" "content" "footer";
+}
+
+#main-extend:checked ~ div.container div.header > label div.burger span {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+}
+
+#main-extend:checked ~ div.container div.sidebar {
+  display: none;
+}
+
+#about-me-extend:checked ~ div.container div.sidebar ul.main-menu ul.about-me-menu {
+  display: none;
+}
+
+#about-me-extend:checked ~ div.container div.sidebar ul.main-menu li:nth-child(1) i {
+  -webkit-transform: none;
+          transform: none;
+}
+
+#portfolio-extend:checked ~ div.container div.sidebar ul.main-menu ul.portfolio-menu {
+  display: none;
+}
+
+#portfolio-extend:checked ~ div.container div.sidebar ul.main-menu li:nth-child(2) i {
+  -webkit-transform: none;
+          transform: none;
+}
+
+#source-extend:checked ~ div.container div.sidebar ul.main-menu ul.source-menu {
+  display: none;
+}
+
+#source-extend:checked ~ div.container div.sidebar ul.main-menu li:nth-child(3) i {
+  -webkit-transform: none;
+          transform: none;
+}
+/*# sourceMappingURL=labelhack.css.map */

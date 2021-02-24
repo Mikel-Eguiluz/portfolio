@@ -1,0 +1,497 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #3e3e3e;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  border: 0;
+}
+
+ul {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+pre {
+  margin: 0;
+}
+
+.bg-image {
+  position: fixed;
+  left: -5;
+  z-index: -10;
+  display: block;
+  width: 105%;
+  min-height: 105vh;
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+  background-color: #222;
+  background-image: url("/assets/images/portfolio-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.lblbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.lblbtn:hover {
+  background-color: #3f3f47;
+}
+
+.container {
+  padding: 1rem;
+  color: #444;
+  max-width: 140rem;
+  margin: auto;
+  max-height: 100vh;
+}
+
+.content-wrapper {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "stack";
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: content;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+      grid-template-rows: calc(95vh - 8rem);
+}
+
+.content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: stack;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: min-content;
+      grid-template-rows: -webkit-min-content;
+      grid-template-rows: min-content;
+  grid-auto-rows: -webkit-min-content;
+  grid-auto-rows: min-content;
+  overflow-y: scroll;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-color: #1e1e1e;
+  border: 1px solid #3f3f47;
+  border-top: none;
+}
+
+/*make the ""cube"" need to do it step by step because I cannot apply a percentage of width(x) to depth(z) */
+.top-face {
+  -webkit-transform: translate(0, -50%) rotatex(90deg) translate(0, -50%);
+          transform: translate(0, -50%) rotatex(90deg) translate(0, -50%);
+}
+
+.bottom-face {
+  -webkit-transform: translate(0, 50%) rotatex(-90deg) translate(0, 50%);
+          transform: translate(0, 50%) rotatex(-90deg) translate(0, 50%);
+}
+
+.front-face {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.right-face {
+  -webkit-transform: translate(50%) rotateY(90deg) translate(50%);
+          transform: translate(50%) rotateY(90deg) translate(50%);
+}
+
+.back-face {
+  -webkit-transform: translate(50%) rotateY(90deg) translate(100%) rotateY(90deg) translate(50%);
+          transform: translate(50%) rotateY(90deg) translate(100%) rotateY(90deg) translate(50%);
+}
+
+.left-face {
+  /* transform: translate(50%) rotateY(90deg) translate(100%) rotateY(90deg)
+    translate(100%) rotateY(90deg) translate(50%); */
+  -webkit-transform: translate(-50%) rotateY(-90deg) translate(-50%);
+          transform: translate(-50%) rotateY(-90deg) translate(-50%);
+}
+
+/* mobile first! */
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "content" "footer";
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #a3a3a3;
+  background-color: #3e3e3e;
+  font-size: 1.6rem;
+  padding: 0.4rem;
+  z-index: 4;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.header label {
+  -webkit-padding-end: 1rem;
+          padding-inline-end: 1rem;
+}
+
+.header label:hover, .header label:focus {
+  background-color: #252527;
+}
+
+.content-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: -1;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  background-color: #252527;
+  border-right: 1px solid #3f3f47;
+  color: #cccccc;
+}
+
+.content-header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.content-header label {
+  -webkit-padding-start: 0.5rem;
+          padding-inline-start: 0.5rem;
+  -webkit-padding-end: 0.5rem;
+          padding-inline-end: 0.5rem;
+}
+
+.content-item {
+  border: 1px solid #3f3f47;
+  border-left: none;
+  -ms-grid-column-span: 6;
+      grid-column-end: span 6;
+}
+
+.content-item > h3 {
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form > *:nth-child(n + 3) {
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
+  padding: 1rem;
+}
+
+.contact-form > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form > div #name {
+  size: 1;
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  padding: 1rem;
+}
+
+.contact-form > div #phone {
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
+  size: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  padding: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.portfolio-piece {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio-piece .portfolio-piece-thumbnail {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.portfolio-piece .portfolio-piece-thumbnail iframe,
+.portfolio-piece .portfolio-piece-thumbnail img {
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-piece .portfolio-piece-footer {
+  -webkit-padding-before: 0.5rem;
+          padding-block-start: 0.5rem;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sidebar {
+  position: absolute;
+  padding: 0;
+  z-index: 4;
+  background: none;
+  width: 140px;
+  background-color: #252527;
+  color: #cccccc;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  -webkit-padding-after: 1rem;
+          padding-block-end: 1rem;
+  border: 1px solid #3f3f47;
+}
+
+.sidebar > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.sidebar ul label {
+  -webkit-padding-start: 1rem;
+          padding-inline-start: 1rem;
+}
+
+.sidebar ul li ul label {
+  height: 100%;
+  -webkit-padding-start: 2rem;
+          padding-inline-start: 2rem;
+}
+
+.sidebar i {
+  -webkit-margin-end: 0.6rem;
+          margin-inline-end: 0.6rem;
+  font-size: 0.9em;
+  min-width: 1.3rem;
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+
+.sidebar i.fa-angle-right {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+.sidebar i.fa-user-astronaut {
+  color: #5466b6;
+}
+
+.sidebar i.fa-file-alt {
+  color: #367855;
+}
+
+.sidebar i.fa-sass {
+  color: #c6497f;
+}
+
+.sidebar i.fa-code {
+  color: #c57533;
+}
+
+.sidebar i.fa-js-square {
+  color: #cac52d;
+}
+
+.sidebar i.fa-css3-alt {
+  color: #519aba;
+}
+
+.source-code {
+  display: none;
+  -ms-grid-column-span: 6;
+      grid-column-end: span 6;
+}
+
+.footer {
+  background-color: #037acc;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  padding: 0;
+  z-index: 4;
+}
+
+.footer ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer i {
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.footer i:hover {
+  border: 2px solid #ca955d;
+}
+
+/* tablet */
+@media (min-width: 500px) {
+  .container {
+    -ms-grid-columns: 140px 1fr;
+        grid-template-columns: 140px 1fr;
+        grid-template-areas: "header  header  " "sidebar content " "footer  footer  ";
+    max-width: 1200px;
+  }
+  .sidebar {
+    margin: 0;
+    width: auto;
+    position: inherit;
+    display: inherit;
+    border: none;
+  }
+  .sidebar li {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .portfolio-piece {
+    -ms-grid-column-span: 3;
+        grid-column-end: span 3;
+  }
+  .contact-form > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .contact-form > div #name {
+    -webkit-margin-end: 0.5rem;
+            margin-inline-end: 0.5rem;
+  }
+  .contact-form textarea {
+    resize: vertical;
+  }
+}
+
+/* desktop */
+@media (min-width: 915px) {
+  .content-item {
+    -ms-grid-column-span: 3;
+        grid-column-end: span 3;
+  }
+  .portfolio-piece {
+    -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+  }
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
