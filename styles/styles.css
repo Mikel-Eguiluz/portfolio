@@ -32,10 +32,6 @@ ul {
           margin-block-end: 0;
 }
 
-pre {
-  margin: 0;
-}
-
 .bg-image {
   position: fixed;
   left: -5;
@@ -358,7 +354,8 @@ pre {
           padding-inline-start: 2rem;
 }
 
-.sidebar i {
+.sidebar i,
+.tab i {
   -webkit-margin-end: 0.6rem;
           margin-inline-end: 0.6rem;
   font-size: 0.9em;
@@ -371,32 +368,39 @@ pre {
           transform-origin: 50% 50%;
 }
 
-.sidebar i.fa-angle-right {
+.sidebar i.fa-angle-right,
+.tab i.fa-angle-right {
   -webkit-transform: rotateZ(90deg);
           transform: rotateZ(90deg);
 }
 
-.sidebar i.fa-user-astronaut {
+.sidebar i.fa-user-astronaut,
+.tab i.fa-user-astronaut {
   color: #5466b6;
 }
 
-.sidebar i.fa-file-alt {
+.sidebar i.fa-file-alt,
+.tab i.fa-file-alt {
   color: #367855;
 }
 
-.sidebar i.fa-sass {
+.sidebar i.fa-sass,
+.tab i.fa-sass {
   color: #c6497f;
 }
 
-.sidebar i.fa-code {
+.sidebar i.fa-code,
+.tab i.fa-code {
   color: #c57533;
 }
 
-.sidebar i.fa-js-square {
+.sidebar i.fa-js-square,
+.tab i.fa-js-square {
   color: #cac52d;
 }
 
-.sidebar i.fa-css3-alt {
+.sidebar i.fa-css3-alt,
+.tab i.fa-css3-alt {
   color: #519aba;
 }
 
@@ -404,6 +408,24 @@ pre {
   display: none;
   -ms-grid-column-span: 6;
       grid-column-end: span 6;
+}
+
+.source-code pre {
+  margin: 0;
+}
+
+.source-code pre code.hljs {
+  background: #1e1e1e;
+}
+
+.tab {
+  padding: 0;
+  background-color: #252527;
+  border-bottom: #3f3f47 1px solid;
+}
+
+.tab label {
+  padding: 0.5rem;
 }
 
 .footer {

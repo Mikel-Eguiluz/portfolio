@@ -58,6 +58,12 @@
   content: "Source - Index.html - Portfolio - ";
 }
 
+#bottom-face-check-index:checked ~ div.container div .bottom-face div.tab:nth-child(1) {
+  background-color: #1e1e1e;
+  border-bottom: #1e1e1e;
+  border-right: 1px solid #3f3f47;
+}
+
 #bottom-face-check-index:checked ~ div.container div #html-code-showcase {
   display: block;
 }
@@ -75,6 +81,13 @@
   content: "Source - Styles.sass - Portfolio - ";
 }
 
+#bottom-face-check-styles:checked ~ div.container div .bottom-face div.tab:nth-child(2) {
+  background-color: #1e1e1e;
+  border-bottom: #1e1e1e;
+  border-right: 1px solid #3f3f47;
+  border-left: 1px solid #3f3f47;
+}
+
 #bottom-face-check-styles:checked ~ div.container div #css-code-showcase {
   display: block;
 }
@@ -90,6 +103,13 @@
 
 #bottom-face-check-main:checked ~ div.container div.header h1::before {
   content: "Source - Main.js - Portfolio - ";
+}
+
+#bottom-face-check-main:checked ~ div.container div .bottom-face div.tab:nth-child(3) {
+  background-color: #1e1e1e;
+  border-bottom: #1e1e1e;
+  border-right: 1px solid #3f3f47;
+  border-left: 1px solid #3f3f47;
 }
 
 #bottom-face-check-main:checked ~ div.container div #main-code-showcase {

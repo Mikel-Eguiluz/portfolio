@@ -62,6 +62,11 @@ $white-text-color: #cccccc;
   &.header h1::before {
     content: "Source - Index.html - Portfolio - ";
   }
+  & .bottom-face div.tab:nth-child(1) {
+    background-color: $main-bg-color;
+    border-bottom: $main-bg-color;
+    border-right: 1px solid $menu-hover;
+  }
   & #html-code-showcase {
     display: block;
   }
@@ -77,6 +82,12 @@ $white-text-color: #cccccc;
   &.header h1::before {
     content: "Source - Styles.sass - Portfolio - ";
   }
+  & .bottom-face div.tab:nth-child(2) {
+    background-color: $main-bg-color;
+    border-bottom: $main-bg-color;
+    border-right: 1px solid $menu-hover;
+    border-left: 1px solid $menu-hover;
+  }
   & #css-code-showcase {
     display: block;
   }
@@ -91,6 +102,12 @@ $white-text-color: #cccccc;
   }
   &.header h1::before {
     content: "Source - Main.js - Portfolio - ";
+  }
+  & .bottom-face div.tab:nth-child(3) {
+    background-color: $main-bg-color;
+    border-bottom: $main-bg-color;
+    border-right: 1px solid $menu-hover;
+    border-left: 1px solid $menu-hover;
   }
   & #main-code-showcase {
     display: block;

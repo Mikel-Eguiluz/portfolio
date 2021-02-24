@@ -35,9 +35,6 @@ ul {
   margin-block-start: 0;
   margin-block-end: 0;
 }
-pre {
-  margin: 0;
-}
 
 .bg-image {
   position: fixed;
@@ -254,6 +251,9 @@ pre {
       //   inset 1.7rem 0px 0px 0px $title-bg-color;#
     }
   }
+}
+.sidebar,
+.tab {
   & i {
     margin-inline-end: 0.6rem;
     font-size: 0.9em;
@@ -284,9 +284,24 @@ pre {
     }
   }
 }
+
 .source-code {
   display: none;
   grid-column-end: span 6;
+  & pre {
+    margin: 0;
+    & code.hljs {
+      background: $main-bg-color;
+    }
+  }
+}
+.tab {
+  padding: 0;
+  background-color: $menu-bg-color;
+  border-bottom: $menu-hover 1px solid;
+  & label {
+    padding: 0.5rem;
+  }
 }
 .footer {
   background-color: $footer-bg-color;
