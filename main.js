@@ -73,6 +73,7 @@ document
   .addEventListener("click", async () => {
     if (!htmlCodeLoaded) {
       fetchHtml();
+      htmlCodeLoaded = true;
     }
   });
 document
@@ -80,6 +81,7 @@ document
   .addEventListener("click", async () => {
     if (!stylesCodeLoaded) {
       fetchStyles();
+      stylesCodeLoaded = true;
     }
   });
 document
@@ -87,5 +89,6 @@ document
   .addEventListener("click", async () => {
     if (!mainCodeLoaded) {
       fetchMain();
+      mainCodeLoaded = true;
     }
   });
