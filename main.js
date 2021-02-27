@@ -64,31 +64,35 @@ const fetchMain = async () => {
   }
 };
 
-let htmlCodeLoaded = false;
-let stylesCodeLoaded = false;
-let mainCodeLoaded = false;
+fetchHtml();
+fetchStyles();
+fetchMain();
 
-document
-  .getElementById("go-to-index-btn")
-  .addEventListener("click", async () => {
-    if (!htmlCodeLoaded) {
-      fetchHtml();
-      htmlCodeLoaded = true;
-    }
-  });
-document
-  .getElementById("go-to-styles-btn")
-  .addEventListener("click", async () => {
-    if (!stylesCodeLoaded) {
-      fetchStyles();
-      stylesCodeLoaded = true;
-    }
-  });
-document
-  .getElementById("go-to-main-btn")
-  .addEventListener("click", async () => {
-    if (!mainCodeLoaded) {
-      fetchMain();
-      mainCodeLoaded = true;
-    }
-  });
+// let htmlCodeLoaded = false;
+// let stylesCodeLoaded = false;
+// let mainCodeLoaded = false;
+
+// document
+//   .getElementById("go-to-index-btn")
+//   .addEventListener("click", async () => {
+//     if (!htmlCodeLoaded) {
+//       fetchHtml();
+//       htmlCodeLoaded = true;
+//     }
+//   });
+// document
+//   .getElementById("go-to-styles-btn")
+//   .addEventListener("click", async () => {
+//     if (!stylesCodeLoaded) {
+//       fetchStyles();
+//       stylesCodeLoaded = true;
+//     }
+//   });
+// document
+//   .getElementById("go-to-main-btn")
+//   .addEventListener("click", async () => {
+//     if (!mainCodeLoaded) {
+//       fetchMain();
+//       mainCodeLoaded = true;
+//     }
+//   });
