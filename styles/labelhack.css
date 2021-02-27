@@ -24,7 +24,7 @@
           transform: translate(-50%) rotateY(-90deg) rotateY(-90deg) translate(-50%);
 }
 
-#back-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(2) > ul > li:nth-child(1) > label {
+#back-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(2) > ul > li:nth-child(2) > label {
   background-color: #094873;
 }
 
@@ -37,7 +37,7 @@
           transform: translate(0, 50%) rotatex(-90deg);
 }
 
-#top-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(2) > ul > li:nth-child(2) > label {
+#top-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(2) > ul > li:nth-child(1) > label {
   background-color: #094873;
 }
 

@@ -49,7 +49,7 @@ ul {
 }
 
 .box {
-  color: #ffffff;
+  color: #cccccc;
   padding: 1rem;
 }
 
@@ -70,7 +70,7 @@ ul {
 .container {
   padding: 1rem;
   color: #444;
-  max-width: 140rem;
+  max-width: 150rem;
   margin: auto;
   max-height: 100vh;
 }
@@ -295,22 +295,45 @@ ul {
           flex-direction: column;
 }
 
+.portfolio-piece h3 {
+  text-align: center;
+}
+
 .portfolio-piece .portfolio-piece-thumbnail {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  margin-bottom: 1rem;
+  padding-bottom: 100%;
+  position: relative;
 }
 
 .portfolio-piece .portfolio-piece-thumbnail iframe,
 .portfolio-piece .portfolio-piece-thumbnail img {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
+}
+
+.portfolio-piece .portfolio-piece-description {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .portfolio-piece .portfolio-piece-footer {
   -webkit-padding-before: 0.5rem;
           padding-block-start: 0.5rem;
-  font-size: 3rem;
+  font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,7 +489,7 @@ ul {
     -ms-grid-columns: 140px 1fr;
         grid-template-columns: 140px 1fr;
         grid-template-areas: "header  header  " "sidebar content " "footer  footer  ";
-    max-width: 1200px;
+    max-width: 140rem;
   }
   .sidebar {
     margin: 0;
@@ -510,6 +533,19 @@ ul {
   .portfolio-piece {
     -ms-grid-column-span: 2;
         grid-column-end: span 2;
+  }
+  .two-x-one {
+    -ms-grid-column-span: 4;
+        grid-column-end: span 4;
+  }
+  .two-x-two {
+    -ms-grid-column-span: 4;
+        grid-column-end: span 4;
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
+  }
+  .hide-on-wide {
+    display: none;
   }
 }
 

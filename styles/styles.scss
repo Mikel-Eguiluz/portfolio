@@ -52,7 +52,7 @@ ul {
 }
 
 .box {
-  color: #ffffff;
+  color: $white-text-color;
   padding: 1rem;
 }
 .lblbtn {
@@ -66,7 +66,7 @@ ul {
 .container {
   padding: 1rem;
   color: #444;
-  max-width: 140rem;
+  max-width: 150rem;
   margin: auto;
   max-height: 100vh;
 }
@@ -207,17 +207,34 @@ ul {
 .portfolio-piece {
   display: flex;
   flex-direction: column;
+  & h3 {
+    text-align: center;
+  }
   & .portfolio-piece-thumbnail {
-    flex-grow: 1;
+    // flex-grow: 1;
+    margin-bottom: 1rem;
+    padding-bottom: 100%;
+    position: relative;
     & iframe,
     img {
+      position: absolute;
+      top: 0;
+      left: 0;
       height: 100%;
       width: 100%;
     }
   }
+  & .portfolio-piece-description {
+    flex-grow: 2;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
   & .portfolio-piece-footer {
     padding-block-start: 0.5rem;
-    font-size: 3rem;
+    font-size: 2rem;
     display: flex;
     justify-content: space-around;
   }
@@ -332,7 +349,7 @@ ul {
       "header  header  "
       "sidebar content "
       "footer  footer  ";
-    max-width: 1200px;
+    max-width: 140rem;
   }
 
   .sidebar {
@@ -371,6 +388,16 @@ ul {
   }
   .portfolio-piece {
     grid-column-end: span 2;
+  }
+  .two-x-one {
+    grid-column-end: span 4;
+  }
+  .two-x-two {
+    grid-column-end: span 4;
+    grid-row-end: span 2;
+  }
+  .hide-on-wide {
+    display: none;
   }
 }
 

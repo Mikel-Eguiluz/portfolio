@@ -3,11 +3,24 @@
   src: url(/assets/fonts/ltoksana.ttf);
   /* OKSANA REGULAR IS THE FONT https://www.fontzillion.com/fonts/nymphont/lt-oksana*/
 }
-body {
-  overflow: hidden;
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
 }
-.logo-container {
+*::-webkit-scrollbar-track {
+  background: none;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: none;
+}
+body {
+  margin: auto;
+  max-width: 1000px;
   background-color: #f0e9d3;
+  /* overflow: hidden; */
+}
+.svg {
+  height: 100vh;
 }
 .axis {
   display: none;
