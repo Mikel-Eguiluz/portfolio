@@ -4,8 +4,6 @@ function escapeHtmlString(htmlStr) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
 }
-//TODO bind these to the butttons and make it DRYer
-
 const fetchHtml = async () => {
   try {
     const response = await fetch("./index.html");
@@ -26,7 +24,7 @@ const fetchHtml = async () => {
   }
 };
 
-const fetchCSS = async () => {
+const fetchStyles = async () => {
   try {
     const response = await fetch("./styles/styles.scss");
     if (response.status !== 200) {
@@ -46,7 +44,7 @@ const fetchCSS = async () => {
   }
 };
 
-const fetchJS = async () => {
+const fetchMain = async () => {
   try {
     const response = await fetch("./main.js");
     if (response.status !== 200) {
@@ -66,6 +64,28 @@ const fetchJS = async () => {
   }
 };
 
-fetchHtml();
-fetchCSS();
-fetchJS();
+let htmlCodeLoaded = false;
+let stylesCodeLoaded = false;
+let mainCodeLoaded = false;
+
+document
+  .getElementById("go-to-index-btn")
+  .addEventListener("click", async () => {
+    if (!htmlCodeLoaded) {
+      fetchHtml();
+    }
+  });
+document
+  .getElementById("go-to-styles-btn")
+  .addEventListener("click", async () => {
+    if (!stylesCodeLoaded) {
+      fetchStyles();
+    }
+  });
+document
+  .getElementById("go-to-main-btn")
+  .addEventListener("click", async () => {
+    if (!mainCodeLoaded) {
+      fetchMain();
+    }
+  });
