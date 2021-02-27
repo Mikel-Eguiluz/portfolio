@@ -538,6 +538,9 @@ ul {
     -ms-grid-column-span: 4;
         grid-column-end: span 4;
   }
+  .two-x-one .portfolio-piece-thumbnail {
+    padding-bottom: 50%;
+  }
   .two-x-two {
     -ms-grid-column-span: 4;
         grid-column-end: span 4;

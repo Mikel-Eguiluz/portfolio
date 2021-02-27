@@ -15,9 +15,6 @@ const fetchHtml = async () => {
     document.getElementById(
       "html-code-showcase",
     ).innerHTML = `<pre><code>${data}</code></pre>`;
-    document.querySelectorAll("pre code").forEach((block) => {
-      hljs.highlightBlock(block);
-    });
     return data;
   } catch (err) {
     console.log("error", err);
@@ -35,9 +32,6 @@ const fetchStyles = async () => {
     document.getElementById(
       "css-code-showcase",
     ).innerHTML = `<pre><code>${data}</code></pre>`;
-    document.querySelectorAll("pre code").forEach((block) => {
-      hljs.highlightBlock(block);
-    });
     return data;
   } catch (err) {
     console.log("error", err);
@@ -55,19 +49,17 @@ const fetchMain = async () => {
     document.getElementById(
       "main-code-showcase",
     ).innerHTML = `<pre><code>${data}</code></pre>`;
-    document.querySelectorAll("pre code").forEach((block) => {
-      hljs.highlightBlock(block);
-    });
     return data;
   } catch (err) {
     console.log("error", err);
   }
 };
-
-fetchHtml();
-fetchStyles();
-fetchMain();
-
+Promise.all([fetchHtml(), fetchStyles(), fetchMain()]).then((data) => {
+  console.log(data);
+  document.querySelectorAll("pre code").forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+});
 // let htmlCodeLoaded = false;
 // let stylesCodeLoaded = false;
 // let mainCodeLoaded = false;
