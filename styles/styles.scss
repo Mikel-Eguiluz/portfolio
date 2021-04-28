@@ -204,8 +204,8 @@ ul {
   & .CV-list-item-description {
     margin-inline-start: 2rem;
   }
-  & time {
-    text-align: right;
+  & .CV-list-item-period {
+    align-self: flex-end;
   }
 }
 .portfolio-piece {

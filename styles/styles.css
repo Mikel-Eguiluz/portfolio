@@ -283,8 +283,9 @@ ul {
           margin-inline-start: 2rem;
 }
 
-.CV-list-item time {
-  text-align: right;
+.CV-list-item .CV-list-item-period {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .portfolio-piece {
