@@ -164,6 +164,7 @@ ul {
     padding-inline-end: 0.5rem;
   }
 }
+
 .content-item {
   border: 1px solid $menu-hover;
   border-left: none;
@@ -192,6 +193,19 @@ ul {
       border-radius: 0.3rem;
       margin: 0.4rem;
     }
+  }
+}
+.CV-list-item {
+  display: flex;
+  flex-direction: column;
+  & .CV-list-item-title {
+    font-weight: 600;
+  }
+  & .CV-list-item-description {
+    margin-inline-start: 2rem;
+  }
+  & time {
+    text-align: right;
   }
 }
 .portfolio-piece {

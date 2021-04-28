@@ -264,6 +264,29 @@ ul {
   margin: 0.4rem;
 }
 
+.CV-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.CV-list-item .CV-list-item-title {
+  font-weight: 600;
+}
+
+.CV-list-item .CV-list-item-description {
+  -webkit-margin-start: 2rem;
+          margin-inline-start: 2rem;
+}
+
+.CV-list-item time {
+  text-align: right;
+}
+
 .portfolio-piece {
   display: -webkit-box;
   display: -ms-flexbox;
