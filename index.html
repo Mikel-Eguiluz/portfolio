@@ -15,7 +15,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="styles/generics.css">
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/labelhack.css">
+  <!-- <link rel="stylesheet" href="styles/labelhack.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
 
   <!-- code highlighter -->>
@@ -37,7 +37,7 @@
   <input type="radio" name="face" class="hidden" id="bottom-face-check-styles">
   <input type="radio" name="face" class="hidden" id="bottom-face-check-main">
   <!-- burger -->
-  <input type="checkbox" id="burger-checkbox" class="hidden" checked>
+  <input type="checkbox" id="burger-checkbox" class="hidden">
   <!-- menu behaviour -->
   <input type="checkbox" id="main-extend" class="hidden">
   <input type="checkbox" id="about-me-extend" class="hidden">
@@ -51,12 +51,12 @@
             <i class="fas fa-angle-right"></i>About me
           </label>
           <ul class="about-me-menu">
-            <li><label for="front-face-check" class="lblbtn about-me-lbl">
-                <i class="fas fa-user-astronaut"></i> Contact
+            <li><label for="right-face-check" class="lblbtn about-me-lbl">
+                <i class="fas fa-user-astronaut"></i> About me
               </label></li>
-            <li><label for="right-face-check" class="lblbtn">
+            <!-- <li><label for="right-face-check" class="lblbtn">
                 <i class="far fa-file-alt"></i> C.V.
-              </label></li>
+              </label></li> -->
           </ul>
         </li>
         <li><label for="portfolio-extend" class="lblbtn">
@@ -102,80 +102,170 @@
       <div class="alignment-keeper"></div>
     </div>
     <div class="content-wrapper">
+
       <!-- Contact -->
-      <div class="content front-face">
-        <div class="content-header">
-          <label for="back-face-check" class="lblbtn"><i class="fas fa-angle-left"></i></label>
-          <h2>Contact</h2>
-          <label for="right-face-check" class="lblbtn">
-            <i class="fas fa-angle-right"></i>
-          </label>
-        </div>
-        <div class="box content-item">
-          <h3>Lorem</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, at reiciendis! Est esse sunt, culpa
-            reiciendis quisquam doloribus maxime deserunt voluptatum error ex! Dolorum expedita dolores tenetur, nemo
-            cumque error.</p>
-        </div>
-        <div class="box content-item contact-form">
-
-          <h3>Contact Me</h3>
-          <div>
-            <input id="name" type="text" placeholder="Name" size="1" required>
-            <input id="phone" type="text" placeholder="Phone" size="1">
-          </div>
-          <input id="email" type="text" placeholder="Email" required>
-          <textarea id="message" placeholder="Message" required></textarea>
-          <button type="button">Send</button>
-
-        </div>
-      </div>
-
       <!-- Curriculum Vitae -->
       <div class="content right-face">
+
         <div class="content-header">
-          <label for="front-face-check" class="lblbtn"><i class="fas fa-angle-left"></i></label>
-          <h2>C.V.</h2>
-          <label for="back-face-check" class="lblbtn">
+          <div class="alignment-keeper"></div>
+          <!-- <label for="front-face-check" class="lblbtn"><i class="fas fa-angle-left"></i></label> -->
+          <h2>About Me</h2>
+          <!-- <label for="back-face-check" class="lblbtn">
             <i class="fas fa-angle-right"></i>
-          </label>
+          </label> -->
+          <div class="alignment-keeper"></div>
+        </div>
+        <div class="box content-item content-item-full-size about-me-content">
+
+          <h1>Hey There!</h1>
+          <h2>My name is Mikel Eguiluz and I like to build things on the Web.</h2>
+          <p>I am actively seeking a Junior Web/Javascript/React/Node developer role.</p>
+          <p>I combine experience of modern software development in several languages with client-facing skills and a
+            humanitarian focus from the Red Cross, Tech Workers Without Borders and Erasmus+.</p>
+          <h4>I'm experienced with the following technologies...</h4>
+          <ul class="techlist">
+            <div class="tech-pill">
+              <li>HTML5</li>
+            </div>
+            <div class="tech-pill">
+              <li>CSS3</li>
+            </div>
+            <div class="tech-pill">
+              <li>SCSS</li>
+            </div>
+            <div class="tech-pill">
+              <li>JavaScript</li>
+            </div>
+            <div class="tech-pill">
+              <li>React</li>
+            </div>
+            <div class="tech-pill">
+              <li>NodeJS</li>
+            </div>
+            <div class="tech-pill">
+              <li>MongoDB</li>
+            </div>
+            <div class="tech-pill">
+              <li>PostgreSQL</li>
+            </div>
+            <div class="tech-pill">
+              <li>Heroku</li>
+            </div>
+          </ul>
+        </div>
+        <div class="content-header">
+          <div class="alignment-keeper"></div>
+          <h2>C.V.</h2>
+          <div class="alignment-keeper"></div>
         </div>
         <div class="box content-item">
-          <h3>Education</h3>
-          <ul>
-            <li>2020-2021 The Jump Academy: Full stack web Development</li>
-            <li>2011-2013 Colegio Montessori (Spain): Multiplatform Software Development.</li>
-            <li>2004-2009 Zaragoza University: Completed 4 out of 5 years of the Geology undergraduate degree</li>
+          <h3>TECHNICAL KNOWLEDGE</h3>
+          Developing and deploying full-stack web applications and websites using:
+          <ul class="typographic">
+            <li><b>HTML5:</b> including accessibility best practices.</li>
+            <li><b>CSS 3:</b> Responsive design, Flexbox & CSS Grid, SASS, CSS Modules and CSS frameworks.</li>
+            <li>
+              <b>JavaScript:</b> ES6+, AJAX, API’s - REST & GraphQL, Animation (Greensock & Three.js), Graphing (d3.js)
+              &
+              Realtime
+              (websockets), TypeScript, Cypress, Jest, Webpack, OAuth.
+            </li>
+            <li><b>React:</b> hooks, context, Material UI.</li>
+            <li> <b>Node.js:</b> Vanilla & Express.</li>
+            <li><b>Databases:</b> SQL - Postgres, NoSQL - MongoDB with Mongoose.js, Redis, Firebase.</li>
+            <li><b>DevOps:</b> Docker & Kubernetes, Heroku (inc. pipelines), serverless (inc. Netlify).</li>
+
           </ul>
 
         </div>
         <div class="box content-item">
-          <h3>Work History</h3>
-          <ul>
-            <li>2019-current: Zumba Instructor. Self employed.</li>
-            <li>2017-current: Supervisor and hardware tester, Cex Kilburn.</li>
-            <li>2017: Temporary work Hornymans at Hays (6 months)</li>
-            <li>2015-2016: Erasmus+ European Voluntary Service at Amarante (Portugal)</li>
-            <li>2015: Software Developer, ATTSF (Association of technical workers without borders). (6 months)</li>
+          <h3>EDUCATION</h3>
+
+          <ul class="typographic">
+            <li>
+              <dt><b>Software Engineering Training</b></dt>
+              <dd>The Jump Digital School, London</dd>
+              <dd>August 2020 - April 2021</dd>
+            </li>
+            <li>
+              <dt><b>Multiplatform Software Development</b></dt>
+              <dd>Colegio Montessori, Spain: Java, Python, SQL and .Net</dd>
+              <dd>September 2014 - June 2017</dd>
+            </li>
+            <li>
+              <dt><b>Geology</b></dt>
+              <dd>Zaragoza University, Spain: Completed 4 of 5 years of Geology degree</dd>
+              <dd>2004 - 2009</dd>
+            </li>
+          </ul>
+
+        </div>
+        <div class="box content-item">
+          <h3>PROFESSIONAL EXPERIENCE</h3>
+          <h4>Assorted roles:</h4>
+          <ul class="typographic">
+            <li>
+              <dt><b>Zumba instructor</b>, London</dt>
+              <dd>2019 - March 2020</dd>
+            </li>
+            <li>
+              <dt><b>Supervisor and Hardware tester</b>, Cex, London</dt>
+              <dd>2017 - present</dd>
+            </li>
+            <li>
+              <dt><b>Erasmus+</b> European Voluntary Service, Portugal</dt>
+              <dd>2015 - 2016</dd>
+            </li>
+            <li>
+              <dt><b>IT Support, Volunteer</b> Red Cross</dt>
+              <dd>2012 - 2015</dd>
+            </li>
+          </ul>
+          <h4>Software Developer roles:</h4>
+          <ul class="typographic">
+            <li>
+              <dt><b>Assoc. of Tech Workers without borders (ATTSF)</b> Rabouni refugee camp, Algeria</dt>
+              <dd>Developed a web-based application for managing aid distribution for Western Sahara, using ISS7, C#,
+                SQL, HTML, CSS &
+                JavaScript (including Angular)
+              </dd>
+              <dd>2015</dd>
+            </li>
+            <li>
+              <dt><b>Acknowledgement (ACK)</b> Zaragoza, Spain</dt>
+              <dd>Building and modifying UI’s using Delphi 7 and administering databases with SQL
+              </dd>
+              <dd>2013</dd>
+            </li>
+            <li>
+              <dt><b>Erasmus+</b> European Voluntary Service, Portugal</dt>
+              <dd>2015 - 2016</dd>
+            </li>
           </ul>
         </div>
         <div class="box content-item">
-          <h3>Languages</h3>
-          <ul>
-            <li> Spanish: Mother Tongue</li>
-            <li> English: Fluent</li>
-            <li> Portuguese: Conversational</li>
+          <h3>ADDITIONAL INFORMATION</h3>
+
+          <ul class="typographic">
+            <li>Fluent in Spanish and English and conversational in Portuguese.</li>
+            <li>Nationality: Spanish.</li>
+            <li>Immediately available for interview</li>
+            <li>References available on request</li>
           </ul>
+
         </div>
       </div>
       <!-- Portfolio css -->
       <div class="content back-face">
         <div class="content-header">
-          <label for="right-face-check" class="lblbtn"><i class="fas fa-angle-left"></i></label>
+          <!-- <label for="right-face-check" class="lblbtn"><i class="fas fa-angle-left"></i></label> -->
+          <div class="alignment-keeper"></div>
           <h2>Portfolio - CSS</h2>
-          <label for="front-face-check" class="lblbtn">
+          <div class="alignment-keeper"></div>
+          <!-- <label for="front-face-check" class="lblbtn">
             <i class="fas fa-angle-right"></i>
-          </label>
+          </label> -->
         </div>
         <div class="box content-item portfolio-piece two-x-two">
           <h3>Airbnb page homage</h3>
@@ -234,7 +324,7 @@
         <div class="box content-item portfolio-piece hide-on-wide">
           <h3>Dropdown Menus</h3>
           <div class="portfolio-piece-thumbnail"><img src="/assets/images/Comboboxes-thumbnail.png" alt=""></div>
-          <span class="portfolio-piece-description">Candidate for deletion
+          <span class="portfolio-piece-description">pure css menus codepen
           </span>
           <div class="portfolio-piece-footer">
             <div><a href="https://codepen.io/MikelEguiluz/pen/gOMrmZK" target="_blank" rel="noopener">
@@ -248,13 +338,120 @@
       <div class="content top-face">
         <div class="content-header">
           <!-- <label for="top-face-check" class="lblbtn"><i class="fas fa-angle-left"></i></label> -->
+          <div class="alignment-keeper"></div>
           <h2>Portfolio - JavaScript </h2>
+          <div class="alignment-keeper"></div>
           <!-- <label for="back-face-check" class="lblbtn">
             <i class="fas fa-angle-right"></i>
           </label> -->
         </div>
+        <div class="box content-item portfolio-piece two-x-two">
+          <h3>Full-Stack tennis </h3>
+          <div class="portfolio-piece-thumbnail"><img src="/assets/images/tennis-thumbnail.png"
+              alt="airbnb homage thumbnail" loading="lazy"></div>
+          <span class="portfolio-piece-description"> This is a full stack app made to allow users of a particular tennis
+            club to visualize and book avaliable slots on the different courts of the club. The front-end (in react and
+            Material UI) features a calendar where users can see availability and book courts, and a list of the
+            current user upcoming bookings, with the option of deleting said bookings. It is connected to an API written
+            in Express and Node, and MongoDB Database for persistence.This app is a MERN (MongoDB, Express, React and
+            Node) app, it also features user authentication
+            with Auth0 and has been deployed to Heroku.</span>
+          <div class="portfolio-piece-footer">
+            <div><a href="https://github.com/Mikel-Eguiluz/fullStack-tennis" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+
+            <div><a href="https://fullstack-tennis.herokuapp.com/" target="_blank" rel="noopener">
+                <i class="fas fa-link"></i><span class="sr-only">link to the page, opens in new tab</span>
+              </a></div>
+          </div>
+        </div>
 
         <div class="box content-item portfolio-piece">
+          <h3>Geolocation app</h3>
+          <div class="portfolio-piece-thumbnail"><img src="./assets/images/geolocation-thumbnail.png"
+              alt="Nic's Music site thumbnail" loading="lazy">
+          </div>
+          <span class="portfolio-piece-description">Map app made using Leaflet and Materialize. Can save the current
+            location to a
+            GraphQL schema.
+          </span>
+          <div class="portfolio-piece-footer">
+            <div><a href="https://github.com/Mikel-Eguiluz/Geolocation" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+            <div><a href="https://geolocationapp.netlify.app/" target="_blank" rel="noopener">
+                <i class="fas fa-link"></i><span class="sr-only">geolocation app. Opens in new Tab</span>
+              </a></div>
+          </div>
+        </div>
+        <div class="box content-item portfolio-piece">
+          <h3>React CRUD app</h3>
+          <div class="portfolio-piece-thumbnail"><img src="./assets/images/react-scores-thumbnail.png"
+              alt="Nic's Music site thumbnail" loading="lazy">
+          </div>
+          <span class="portfolio-piece-description"> React app capable of manipulating data in a fake server (made with
+            faker.js).
+          </span>
+          <div class="portfolio-piece-footer">
+            <div><a href="https://github.com/Mikel-Eguiluz/nicMusic-react" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i><span class="sr-only">client github repo. Opens in new Tab</span>
+                client</a> </div>
+            <div><a href="https://github.com/Mikel-Eguiluz/nicMusic-react-fake-server" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i><span class="sr-only">server github repo. Opens in new Tab</span>
+                server. </a> </div>
+          </div>
+        </div>
+        <div class="box content-item portfolio-piece">
+          <h3>API server</h3>
+          <div class="portfolio-piece-thumbnail"><img src="./assets/images/server.jpg" alt="Nic's Music site thumbnail"
+              loading="lazy">
+          </div>
+          <span class="portfolio-piece-description">Small API server written in express and Node, connectts to a
+            MongoDB using Mongoose.
+          </span>
+          <div class="portfolio-piece-footer">
+            <div><a href="https://github.com/Mikel-Eguiluz/test-server" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+
+          </div>
+        </div>
+
+        <div class="box content-item portfolio-piece">
+          <h3>To-do app</h3>
+          <div class="portfolio-piece-thumbnail"><img src="./assets/images/todo-thumbnail.png"
+              alt="Nic's Music site thumbnail" loading="lazy">
+          </div>
+          <span class="portfolio-piece-description">Yet another to-do app saves to a GraphQL schema. Interface in
+            Bootstrap.
+          </span>
+          <div class="portfolio-piece-footer">
+            <div><a href="https://github.com/Mikel-Eguiluz/todo-app" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+            <div><a href="https://todo-js-app.netlify.app" target="_blank" rel="noopener">
+                <i class="fas fa-link"></i><span class="sr-only">To-do app. Opens in new Tab</span>
+              </a></div>
+          </div>
+        </div>
+        <div class="box content-item portfolio-piece">
+          <h3>GSAP playground</h3>
+          <div class="portfolio-piece-thumbnail"><img src="./assets/images/gsap-thumbnail.png"
+              alt="Nic's Music site thumbnail" loading="lazy">
+          </div>
+          <span class="portfolio-piece-description">A couple of gsap animation projects
+          </span>
+          <div class="portfolio-piece-footer">
+            <div><a href="https://github.com/Mikel-Eguiluz/js-animation" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
+              </a></div>
+            <div><a href="https://awesome-pike-6d3cb7.netlify.app/" target="_blank" rel="noopener">
+                <i class="fas fa-link"></i><span class="sr-only">Link to the page. Opens in new Tab</span>
+              </a></div>
+          </div>
+        </div>
+        <div class="box content-item portfolio-piece hide-on-wide">
           <h3>Nic's Music</h3>
           <div class="portfolio-piece-thumbnail"><img src="./assets/images/nic-music-thumbnail.png"
               alt="Nic's Music site thumbnail" loading="lazy">
@@ -268,23 +465,6 @@
               </a></div>
             <div><a href="https://nicmusic.netlify.app/" target="_blank" rel="noopener">
                 <i class="fas fa-link"></i><span class="sr-only">Nics Music Inventory. Opens in new Tab</span>
-              </a></div>
-          </div>
-        </div>
-        <div class="box content-item portfolio-piece">
-          <h3>Geolocation app</h3>
-          <div class="portfolio-piece-thumbnail"><img src="./assets/images/geolocation-thumbnail.png"
-              alt="Nic's Music site thumbnail" loading="lazy">
-          </div>
-          <span class="portfolio-piece-description">Map app made using Leaflet. Can save the current location to a
-            GraphQL schema.
-          </span>
-          <div class="portfolio-piece-footer">
-            <div><a href="https://github.com/Mikel-Eguiluz/Geolocation" target="_blank" rel="noopener">
-                <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
-              </a></div>
-            <div><a href="https://geolocationapp.netlify.app/" target="_blank" rel="noopener">
-                <i class="fas fa-link"></i><span class="sr-only">geolocation app. Opens in new Tab</span>
               </a></div>
           </div>
         </div>

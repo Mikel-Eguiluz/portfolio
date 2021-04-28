@@ -3,39 +3,58 @@
   src: url(/assets/fonts/ltoksana.ttf);
   /* OKSANA REGULAR IS THE FONT https://www.fontzillion.com/fonts/nymphont/lt-oksana*/
 }
+
 *::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;
 }
+
 *::-webkit-scrollbar-track {
   background: none;
 }
+
 *::-webkit-scrollbar-thumb {
   background-color: none;
 }
+
 body {
   margin: auto;
   max-width: 1000px;
   background-color: #f0e9d3;
   /* overflow: hidden; */
 }
+
 .svg {
   height: 100vh;
 }
+
 .axis {
   display: none;
 }
+
 .textstyle {
   font: 2.7rem "Fira Sans", serif;
   /*letter-spacing: 0.5rem;/*
   /*font-family: "Amatic SC", cursive;*/
   font-family: "ltoksana";
 }
+
 .motive {
   fill: #340143;
   stroke: #340143;
   stroke-linecap: round;
 }
+
+@-webkit-keyframes pentagram-in {
+  40% {
+    stroke-dashoffset: 220;
+  }
+  60%,
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 @keyframes pentagram-in {
   40% {
     stroke-dashoffset: 220;
@@ -45,13 +64,32 @@ body {
     stroke-dashoffset: 0;
   }
 }
+
 .penta {
   stroke: black;
   stroke-width: 2;
   stroke-dasharray: 220;
   stroke-dashoffset: 220;
-  animation: pentagram-in 5s linear alternate infinite;
+  -webkit-animation: pentagram-in 5s linear alternate infinite;
+          animation: pentagram-in 5s linear alternate infinite;
 }
+
+@-webkit-keyframes pentagram-mid {
+  40% {
+    stroke-width: 10;
+    stroke: #00661b;
+    rx: 100;
+    ry: 105;
+  }
+  70%,
+  100% {
+    stroke-width: 2;
+    stroke: black;
+    rx: 110;
+    ry: 0.001;
+  }
+}
+
 @keyframes pentagram-mid {
   40% {
     stroke-width: 10;
@@ -67,30 +105,79 @@ body {
     ry: 0.001;
   }
 }
+
 .outer-circle {
-  animation-duration: 5s;
-  animation-name: pentagram-mid;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: pentagram-mid;
+          animation-name: pentagram-mid;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
-@keyframes banner-out {
+
+@-webkit-keyframes banner-out {
   20% {
-    transform: translate(0);
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
   50% {
-    transform: translate(0px, 200px);
+    -webkit-transform: translate(0px, 200px);
+            transform: translate(0px, 200px);
   }
   100% {
-    transform: translate(0px, 200px);
+    -webkit-transform: translate(0px, 200px);
+            transform: translate(0px, 200px);
   }
 }
-.banner {
-  animation-duration: 5s;
-  animation-name: banner-out;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+
+@keyframes banner-out {
+  20% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  50% {
+    -webkit-transform: translate(0px, 200px);
+            transform: translate(0px, 200px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 200px);
+            transform: translate(0px, 200px);
+  }
 }
+
+.banner {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: banner-out;
+          animation-name: banner-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
 /*left note*/
+@-webkit-keyframes left-morph {
+  40% {
+    d: path("M-10,-60 L-10,-60 L-40,60 L-70,65 Z");
+    cx: -15;
+    cy: -75;
+    r: 5;
+    fill: #340143;
+    stroke: #340143;
+  }
+  80%,
+  100% {
+    d: path("M-34,-40 L-30,-35 L-30,60 L-34,60 Z");
+    fill: black;
+    stroke: black;
+    cx: -45;
+    cy: 60;
+    r: 15;
+  }
+}
 @keyframes left-morph {
   40% {
     d: path("M-10,-60 L-10,-60 L-40,60 L-70,65 Z");
@@ -110,18 +197,22 @@ body {
     r: 15;
   }
 }
+
 .left-motive {
-  animation-duration: 5s;
-  animation-name: left-morph;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: left-morph;
+          animation-name: left-morph;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
+
 /*mid note*/
-@keyframes mid-morph {
+@-webkit-keyframes mid-morph {
   40% {
-    d: path(
-      "M-20,50 L0,-70 C0,-70 0,-70 0,-70 C0,-70 0,-70 0,-70 L20,50 L00,80 Z"
-    );
+    d: path("M-20,50 L0,-70 C0,-70 0,-70 0,-70 C0,-70 0,-70 0,-70 L20,50 L00,80 Z");
     cx: 0;
     cy: -89;
     r: 5;
@@ -131,9 +222,7 @@ body {
   80%,
   100% {
     /*https://yqnn.github.io/svg-path-editor/*/
-    d: path(
-      "M6,-100 L11,-100 C11,-82 57,-74 22,-23 C42,-72 14,-82 11,-81 L10,15 L6,15 Z"
-    );
+    d: path("M6,-100 L11,-100 C11,-82 57,-74 22,-23 C42,-72 14,-82 11,-81 L10,15 L6,15 Z");
     /* d: path("M6,-100 L10,-95 L10,15 L6,15 Z");*/
     fill: black;
     stroke: black;
@@ -142,14 +231,41 @@ body {
     r: 15;
   }
 }
-.mid-motive {
-  animation-duration: 5s;
-  animation-name: mid-morph;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+@keyframes mid-morph {
+  40% {
+    d: path("M-20,50 L0,-70 C0,-70 0,-70 0,-70 C0,-70 0,-70 0,-70 L20,50 L00,80 Z");
+    cx: 0;
+    cy: -89;
+    r: 5;
+    fill: #340143;
+    stroke: #340143;
+  }
+  80%,
+  100% {
+    /*https://yqnn.github.io/svg-path-editor/*/
+    d: path("M6,-100 L11,-100 C11,-82 57,-74 22,-23 C42,-72 14,-82 11,-81 L10,15 L6,15 Z");
+    /* d: path("M6,-100 L10,-95 L10,15 L6,15 Z");*/
+    fill: black;
+    stroke: black;
+    cx: -5;
+    cy: 15;
+    r: 15;
+  }
 }
+
+.mid-motive {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: mid-morph;
+          animation-name: mid-morph;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
 /*right note*/
-@keyframes right-morph {
+@-webkit-keyframes right-morph {
   40% {
     d: path("M10,-60 L10,-60 L40,60 L70,65 Z");
     cx: 15;
@@ -158,7 +274,6 @@ body {
     fill: #340143;
     stroke: #340143;
   }
-
   80%,
   100% {
     d: path("M50,-65 L46,-70 L46,45 L50,45 Z");
@@ -169,9 +284,34 @@ body {
     r: 15;
   }
 }
-.right-motive {
-  animation-duration: 5s;
-  animation-name: right-morph;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+@keyframes right-morph {
+  40% {
+    d: path("M10,-60 L10,-60 L40,60 L70,65 Z");
+    cx: 15;
+    cy: -75;
+    r: 5;
+    fill: #340143;
+    stroke: #340143;
+  }
+  80%,
+  100% {
+    d: path("M50,-65 L46,-70 L46,45 L50,45 Z");
+    fill: black;
+    stroke: black;
+    cx: 35;
+    cy: 45;
+    r: 15;
+  }
 }
+
+.right-motive {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: right-morph;
+          animation-name: right-morph;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+/*# sourceMappingURL=logo-styles.css.map */

@@ -10,7 +10,6 @@ $white-text-color: #cccccc;
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  // font-family: "Inconsolata", monospace;
   display: flex;
 }
 *::-webkit-scrollbar {
@@ -19,8 +18,6 @@ body {
 }
 *::-webkit-scrollbar-track {
   background: $main-bg-color;
-
-  // border-left: 1px solid $menu-hover;
 }
 *::-webkit-scrollbar-thumb {
   background-color: $title-bg-color;
@@ -86,13 +83,13 @@ ul {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: min-content;
   grid-auto-rows: min-content;
-  // grid-gap: 1rem;
   overflow-y: scroll;
   backface-visibility: hidden;
   background-color: $main-bg-color;
   border: 1px solid $menu-hover;
   border-top: none;
 }
+
 /*make the ""cube"" need to do it step by step because I cannot apply a percentage of width(x) to depth(z) */
 .top-face {
   transform: translate(0, -50%) rotatex(90deg) translate(0, -50%);
@@ -171,37 +168,30 @@ ul {
   border: 1px solid $menu-hover;
   border-left: none;
   grid-column-end: span 6;
-  & > h3 {
+  & > h3,
+  h4 {
     margin-block-end: 1rem;
   }
 }
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  & > *:nth-child(n + 3) {
-    margin-block-end: 0.5rem;
-    padding: 1rem;
-  }
-  & > div {
+.about-me-content {
+  text-align: center;
+  padding: 7rem;
+  & .techlist {
     display: flex;
-    flex-direction: column;
-    & #name {
-      size: 1;
-      margin-block-end: 0.5rem;
-      flex-grow: 1;
-      flex-shrink: 1;
-      padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: auto;
+    margin-block-end: 1rem;
+    & .tech-pill {
+      border: 1px solid #fa6d01;
+      color: #fa6d01;
+      background-color: rgba(250, 109, 1, 0.2);
+      padding: 0.4rem;
+      border-radius: 0.3rem;
+      margin: 0.4rem;
     }
-    & #phone {
-      margin-block-end: 0.5rem;
-      size: 1;
-      flex-grow: 1;
-      flex-shrink: 1;
-      padding: 1rem;
-    }
-  }
-  textarea {
-    resize: vertical;
   }
 }
 .portfolio-piece {
@@ -211,7 +201,6 @@ ul {
     text-align: center;
   }
   & .portfolio-piece-thumbnail {
-    // flex-grow: 1;
     margin-bottom: 1rem;
     padding-bottom: 60%;
     position: relative;
@@ -254,7 +243,6 @@ ul {
   & > ul {
     display: flex;
     flex-flow: column;
-    // justify-content: space-around;
   }
   & ul {
     & label {
@@ -263,9 +251,6 @@ ul {
     & li ul label {
       height: 100%;
       padding-inline-start: 2rem;
-      // border-left: 1px solid white;
-      // box-shadow: inset 1.5rem 0px 0px 1px $menu-bg-color,
-      //   inset 1.7rem 0px 0px 0px $title-bg-color;#
     }
   }
 }
@@ -366,25 +351,15 @@ ul {
   .portfolio-piece {
     grid-column-end: span 3;
   }
-  .contact-form {
-    & > div {
-      display: flex;
-      flex-direction: row;
-
-      & #name {
-        margin-inline-end: 0.5rem;
-      }
-    }
-    textarea {
-      resize: vertical;
-    }
-  }
 }
 /* desktop */
 
 @media (min-width: 915px) {
   .content-item {
     grid-column-end: span 3;
+    &.content-item-full-size {
+      grid-column-end: span 6;
+    }
   }
   .portfolio-piece {
     grid-column-end: span 2;
@@ -406,4 +381,216 @@ ul {
 
 .hidden {
   display: none;
+}
+
+/***********************************************
+******************FACES BEHAVIOUR***************
+***********************************************/
+
+#front-face-check:checked ~ div.container div {
+  &.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
+    background-color: $menu-selected;
+  }
+  &.header h1::before {
+    content: "Contact - About me - ";
+  }
+  &.content-wrapper {
+    transform: translate(-0%) rotateY(-0deg);
+  }
+}
+
+#left-face-check:checked ~ div.container div {
+  &.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
+    background-color: $menu-selected;
+  }
+  &.header h1::before {
+    content: "Contact - About me - ";
+  }
+  &.content-wrapper {
+    transform: translate(-0%) rotateY(-0deg);
+  }
+}
+
+#right-face-check:checked ~ div.container div {
+  &.content-wrapper {
+    transform: translate(-50%) rotateY(-90deg);
+  }
+  &.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
+    background-color: $menu-selected;
+  }
+  &.header h1::before {
+    content: "C.V. - About me - ";
+  }
+}
+#left-face-check:checked ~ div.container div {
+  &.content-wrapper {
+    transform: translate(50%) rotateY(90deg);
+  }
+  &.sidebar > ul > li:nth-child(1) > ul > li:nth-child(2) > label {
+    background-color: $menu-selected;
+  }
+  &.header h1::before {
+    content: "C.V. - About me - ";
+  }
+}
+
+#back-face-check:checked ~ div.container div {
+  &.content-wrapper {
+    transform: translate(-50%) rotateY(-90deg) rotateY(-90deg) translate(-50%);
+  }
+  &.sidebar > ul > li:nth-child(2) > ul > li:nth-child(2) > label {
+    background-color: $menu-selected;
+  }
+  &.header h1::before {
+    content: "CSS - Portfolio - ";
+  }
+}
+#top-face-check:checked ~ div.container div {
+  &.content-wrapper {
+    transform: translate(0, 50%) rotatex(-90deg);
+  }
+  &.sidebar > ul > li:nth-child(2) > ul > li:nth-child(1) > label {
+    background-color: $menu-selected;
+  }
+  &.header h1::before {
+    content: "JavaScript - Portfolio - ";
+  }
+}
+#bottom-face-check-index:checked ~ div.container div {
+  &.content-wrapper {
+    transform: translate(0, -50%) rotatex(90deg);
+  }
+  &.sidebar > ul > li:nth-child(3) > ul > li:nth-child(1) > label {
+    background-color: $menu-selected;
+  }
+  &.header h1::before {
+    content: "Source - Index.html - Portfolio - ";
+  }
+  & .bottom-face div.tab:nth-child(1) {
+    background-color: $main-bg-color;
+    border-bottom: $main-bg-color;
+    border-right: 1px solid $menu-hover;
+  }
+  & #html-code-showcase {
+    display: block;
+  }
+}
+
+#bottom-face-check-styles:checked ~ div.container div {
+  &.content-wrapper {
+    transform: translate(0, -50%) rotatex(90deg);
+  }
+  &.sidebar > ul > li:nth-child(3) > ul > li:nth-child(2) > label {
+    background-color: $menu-selected;
+  }
+  &.header h1::before {
+    content: "Source - Styles.sass - Portfolio - ";
+  }
+  & .bottom-face div.tab:nth-child(2) {
+    background-color: $main-bg-color;
+    border-bottom: $main-bg-color;
+    border-right: 1px solid $menu-hover;
+    border-left: 1px solid $menu-hover;
+  }
+  & #css-code-showcase {
+    display: block;
+  }
+}
+
+#bottom-face-check-main:checked ~ div.container div {
+  &.content-wrapper {
+    transform: translate(0, -50%) rotatex(90deg);
+  }
+  &.sidebar > ul > li:nth-child(3) > ul > li:nth-child(3) > label {
+    background-color: $menu-selected;
+  }
+  &.header h1::before {
+    content: "Source - Main.js - Portfolio - ";
+  }
+  & .bottom-face div.tab:nth-child(3) {
+    background-color: $main-bg-color;
+    border-bottom: $main-bg-color;
+    border-right: 1px solid $menu-hover;
+    border-left: 1px solid $menu-hover;
+  }
+  & #main-code-showcase {
+    display: block;
+  }
+}
+
+/***********************************************
+****************** MENU BEHAVIOUR **************
+***********************************************/
+
+// BURGER
+
+.burger {
+  cursor: pointer;
+  z-index: 5;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline-start: 0.5rem;
+  margin-inline-end: 0.5rem;
+  & span {
+    border-radius: 2px;
+    height: 0.3rem;
+    margin-block-end: 0.2rem;
+    width: 80%;
+    background: $white-text-color;
+    border-radius: 5% / 50%;
+    transition: 0.25s ease-in-out;
+    &:nth-child(1) {
+      transform: translatey(5px) rotate(45deg);
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: translatey(-5px) rotate(-45deg);
+    }
+  }
+}
+
+//MENU
+
+#main-extend:checked ~ div.container {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  & div.header > label div.burger span {
+    transform: none;
+    opacity: 1;
+  }
+  & div.sidebar {
+    display: none;
+  }
+}
+#about-me-extend:checked ~ div.container div.sidebar ul.main-menu {
+  & ul.about-me-menu {
+    display: none;
+  }
+  & li:nth-child(1) i {
+    transform: none;
+  }
+}
+#portfolio-extend:checked ~ div.container div.sidebar ul.main-menu {
+  & ul.portfolio-menu {
+    display: none;
+  }
+  & li:nth-child(2) i {
+    transform: none;
+  }
+}
+#source-extend:checked ~ div.container div.sidebar ul.main-menu {
+  & ul.source-menu {
+    display: none;
+  }
+  & li:nth-child(3) i {
+    transform: none;
+  }
 }
