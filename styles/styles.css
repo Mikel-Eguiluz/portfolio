@@ -315,6 +315,7 @@ ul {
   left: 0;
   height: 100%;
   width: 100%;
+  border: 0px;
 }
 
 .portfolio-piece .portfolio-piece-description {
