@@ -22,10 +22,9 @@
     rel="stylesheet">
   <link rel="stylesheet" href="styles/generics.css">
   <link rel="stylesheet" href="styles/styles.css">
-  <!-- <link rel="stylesheet" href="styles/labelhack.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
 
-  <!-- code highlighter -->>
+  <!-- code highlighter -->
   <link rel="stylesheet"
     href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/atelier-estuary-dark.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
@@ -58,7 +57,7 @@
             <i class="fas fa-angle-right"></i>About me
           </label>
           <ul class="about-me-menu">
-            <li><label for="right-face-check" class="lblbtn about-me-lbl">
+            <li><label tabindex="0" for="right-face-check" class="lblbtn about-me-lbl">
                 <i class="fas fa-user-astronaut"></i> About me
               </label></li>
           </ul>
@@ -67,10 +66,10 @@
             <i class="fas fa-angle-right"></i> Portfolio
           </label>
           <ul class="portfolio-menu">
-            <li><label for="top-face-check" class="lblbtn">
+            <li><label tabindex="0" for="top-face-check" class="lblbtn">
                 <i class="fab fa-js-square"></i> JavaScript
               </label></li>
-            <li><label for="back-face-check" class="lblbtn">
+            <li><label tabindex="0" for="back-face-check" class="lblbtn">
                 <i class="fab fa-css3-alt"></i> CSS
               </label></li>
 
@@ -80,13 +79,13 @@
             <i class="fas fa-angle-right"></i> Source
           </label>
           <ul class="source-menu">
-            <li><label for="bottom-face-check-index" id="go-to-index-btn" class="lblbtn">
+            <li><label tabindex="0" for="bottom-face-check-index" class="lblbtn">
                 <i class="fas fa-code"></i> index.html
               </label></li>
-            <li><label for="bottom-face-check-styles" id="go-to-styles-btn" class="lblbtn">
+            <li><label tabindex="0" for="bottom-face-check-styles" class="lblbtn">
                 <i class="fab fa-sass"></i> styles.scss
               </label></li>
-            <li><label for="bottom-face-check-main" id="go-to-main-btn" class="lblbtn">
+            <li><label tabindex="0" for="bottom-face-check-main" class="lblbtn">
                 <i class="fab fa-js-square"></i>&nbsp;main.js
               </label></li>
           </ul>
@@ -276,15 +275,16 @@
           <div class="portfolio-piece-thumbnail"><img src="/assets/images/airbnb-thumbnail.png"
               alt="airbnb homage thumbnail" loading="lazy"></div>
           <span class="portfolio-piece-description"><span>A copy of the design of <a href="https://www.airbnb.co.uk/"
-                target="_blank" rel="noopener">airbnb.co.uk</a><span class="sr-only">Opens in new Tab</span>
+                target="_blank" rel="noopener" tabindex="-1">airbnb.co.uk</a><span class="sr-only">Opens in new
+                Tab</span>
               to showcase and practise my CSS skills.
             </span></span>
           <div class="portfolio-piece-footer">
-            <div><a href="https://github.com/Mikel-Eguiluz/airbnb-homage" target="_blank" rel="noopener">
+            <div><a href="https://github.com/Mikel-Eguiluz/airbnb-homage" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
               </a></div>
 
-            <div><a href="https://airbnb-homage.netlify.app" target="_blank" rel="noopener">
+            <div><a href="https://airbnb-homage.netlify.app" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fas fa-link"></i><span class="sr-only">link to the page, opens in new tab</span>
               </a></div>
           </div>
@@ -300,10 +300,11 @@
             approached me to build a small page for their end-of-year event project.
           </span>
           <div class="portfolio-piece-footer">
-            <div><a href="https://github.com/Mikel-Eguiluz/Self-development-2020" target="_blank" rel="noopener">
+            <div><a href="https://github.com/Mikel-Eguiluz/Self-development-2020" target="_blank" rel="noopener"
+                tabindex="-1">
                 <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
               </a></div>
-            <div><a href="https://www.selfdevelopment2020.com/" target="_blank" rel="noopener">
+            <div><a href="https://www.selfdevelopment2020.com/" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fas fa-link"></i><span class="sr-only">Self development 2020 site. Opens in new Tab</span>
               </a></div>
           </div>
@@ -315,10 +316,10 @@
           <span class="portfolio-piece-description">Small CSS animation of the logo of a woodwind ensemble.
           </span>
           <div class="portfolio-piece-footer">
-            <div><a href="./tailleferreLogo/tailleferre.html">
-                <i class="fas fa-link"></i><span class="sr-only">github. Opens in new Tab</span>
+            <div><a href="./tailleferreLogo/tailleferre.html" target="_blank" rel="noopener" tabindex="-1">
+                <i class="fas fa-link"></i><span class="sr-only">link t0 logo. Opens in new Tab</span>
               </a></div>
-            <div><a href="https://codepen.io/MikelEguiluz/pen/jOqdGeY" target="_blank" rel="noopener">
+            <div><a href="https://codepen.io/MikelEguiluz/pen/jOqdGeY" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fab fa-codepen"></i><span class="sr-only">Codepen. Opens in new Tab</span>
               </a></div>
 
@@ -331,7 +332,7 @@
           <span class="portfolio-piece-description">pure css menus codepen
           </span>
           <div class="portfolio-piece-footer">
-            <div><a href="https://codepen.io/MikelEguiluz/pen/gOMrmZK" target="_blank" rel="noopener">
+            <div><a href="https://codepen.io/MikelEguiluz/pen/gOMrmZK" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fab fa-codepen"></i><span class="sr-only">Codepen. Opens in new Tab</span>
               </a></div>
           </div>
@@ -359,11 +360,12 @@
             Node) app, it also features user authentication
             with Auth0 and has been deployed to Heroku.</span>
           <div class="portfolio-piece-footer">
-            <div><a href="https://github.com/Mikel-Eguiluz/fullStack-tennis" target="_blank" rel="noopener">
+            <div><a href="https://github.com/Mikel-Eguiluz/fullStack-tennis" target="_blank" rel="noopener"
+                tabindex="-1">
                 <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
               </a></div>
 
-            <div><a href="https://fullstack-tennis.herokuapp.com/" target="_blank" rel="noopener">
+            <div><a href="https://fullstack-tennis.herokuapp.com/" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fas fa-link"></i><span class="sr-only">link to the page, opens in new tab</span>
               </a></div>
           </div>
@@ -379,10 +381,10 @@
             GraphQL schema.
           </span>
           <div class="portfolio-piece-footer">
-            <div><a href="https://github.com/Mikel-Eguiluz/Geolocation" target="_blank" rel="noopener">
+            <div><a href="https://github.com/Mikel-Eguiluz/Geolocation" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
               </a></div>
-            <div><a href="https://geolocationapp.netlify.app/" target="_blank" rel="noopener">
+            <div><a href="https://geolocationapp.netlify.app/" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fas fa-link"></i><span class="sr-only">geolocation app. Opens in new Tab</span>
               </a></div>
           </div>
@@ -396,10 +398,11 @@
             faker.js).
           </span>
           <div class="portfolio-piece-footer">
-            <div><a href="https://github.com/Mikel-Eguiluz/nicMusic-react" target="_blank" rel="noopener">
+            <div><a href="https://github.com/Mikel-Eguiluz/nicMusic-react" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fab fa-github"></i><span class="sr-only">client github repo. Opens in new Tab</span>
                 client</a> </div>
-            <div><a href="https://github.com/Mikel-Eguiluz/nicMusic-react-fake-server" target="_blank" rel="noopener">
+            <div><a href="https://github.com/Mikel-Eguiluz/nicMusic-react-fake-server" target="_blank" rel="noopener"
+                tabindex="-1">
                 <i class="fab fa-github"></i><span class="sr-only">server github repo. Opens in new Tab</span>
                 server. </a> </div>
           </div>
@@ -413,7 +416,7 @@
             MongoDB using Mongoose.
           </span>
           <div class="portfolio-piece-footer">
-            <div><a href="https://github.com/Mikel-Eguiluz/test-server" target="_blank" rel="noopener">
+            <div><a href="https://github.com/Mikel-Eguiluz/test-server" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
               </a></div>
 
@@ -429,10 +432,10 @@
             Bootstrap.
           </span>
           <div class="portfolio-piece-footer">
-            <div><a href="https://github.com/Mikel-Eguiluz/todo-app" target="_blank" rel="noopener">
+            <div><a href="https://github.com/Mikel-Eguiluz/todo-app" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
               </a></div>
-            <div><a href="https://todo-js-app.netlify.app" target="_blank" rel="noopener">
+            <div><a href="https://todo-js-app.netlify.app" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fas fa-link"></i><span class="sr-only">To-do app. Opens in new Tab</span>
               </a></div>
           </div>
@@ -445,10 +448,10 @@
           <span class="portfolio-piece-description">A couple of gsap animation projects
           </span>
           <div class="portfolio-piece-footer">
-            <div><a href="https://github.com/Mikel-Eguiluz/js-animation" target="_blank" rel="noopener">
+            <div><a href="https://github.com/Mikel-Eguiluz/js-animation" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
               </a></div>
-            <div><a href="https://awesome-pike-6d3cb7.netlify.app/" target="_blank" rel="noopener">
+            <div><a href="https://awesome-pike-6d3cb7.netlify.app/" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fas fa-link"></i><span class="sr-only">Link to the page. Opens in new Tab</span>
               </a></div>
           </div>
@@ -462,10 +465,11 @@
             Bootstrap
           </span>
           <div class="portfolio-piece-footer">
-            <div><a href="https://github.com/Mikel-Eguiluz/nic_Library_Vanilla_js" target="_blank" rel="noopener">
+            <div><a href="https://github.com/Mikel-Eguiluz/nic_Library_Vanilla_js" target="_blank" rel="noopener"
+                tabindex="-1">
                 <i class="fab fa-github"></i><span class="sr-only">github. Opens in new Tab</span>
               </a></div>
-            <div><a href="https://nicmusic.netlify.app/" target="_blank" rel="noopener">
+            <div><a href="https://nicmusic.netlify.app/" target="_blank" rel="noopener" tabindex="-1">
                 <i class="fas fa-link"></i><span class="sr-only">Nics Music Inventory. Opens in new Tab</span>
               </a></div>
           </div>

@@ -31,3 +31,44 @@ Promise.all([
     hljs.highlightBlock(block);
   });
 });
+
+/***********************************************************
+ ********Makes key press on label work as clicks************
+ **********************************************************/
+
+const sidebarBtns = document.querySelectorAll(`.sidebar label[tabindex="0"]`);
+console.log(sidebarBtns);
+for (const btn of sidebarBtns) {
+  btn.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+      e.target.click();
+    }
+  });
+}
+
+/*******************************
+ ********Tab order fix**********
+ ******************************/
+
+const cssSectionAnchors = document.querySelectorAll(`div.back-face a`);
+const jsSectionAnchors = document.querySelectorAll(`div.top-face a`);
+
+const cube = document.querySelector(`main.content-wrapper`);
+cube.addEventListener("transitionstart", () => {
+  for (const a of cssSectionAnchors) {
+    a.tabIndex = -1;
+  }
+  for (const a of jsSectionAnchors) {
+    a.tabIndex = -1;
+  }
+  if (document.getElementById("back-face-check").checked) {
+    for (const a of cssSectionAnchors) {
+      a.tabIndex = 0;
+    }
+  }
+  if (document.getElementById("top-face-check").checked) {
+    for (const a of jsSectionAnchors) {
+      a.tabIndex = 0;
+    }
+  }
+});
