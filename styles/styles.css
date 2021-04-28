@@ -526,152 +526,152 @@ ul {
 /***********************************************
 ******************FACES BEHAVIOUR***************
 ***********************************************/
-#front-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
+#front-face-check:checked ~ div.container aside.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
   background-color: #094873;
 }
 
-#front-face-check:checked ~ div.container div.header h1::before {
+#front-face-check:checked ~ div.container header.header h1::before {
   content: "Contact - About me - ";
 }
 
-#front-face-check:checked ~ div.container div.content-wrapper {
+#front-face-check:checked ~ div.container main.content-wrapper {
   -webkit-transform: translate(0%) rotateY(0deg);
           transform: translate(0%) rotateY(0deg);
 }
 
-#left-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
+#left-face-check:checked ~ div.container aside.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
   background-color: #094873;
 }
 
-#left-face-check:checked ~ div.container div.header h1::before {
+#left-face-check:checked ~ div.container header.header h1::before {
   content: "Contact - About me - ";
 }
 
-#left-face-check:checked ~ div.container div.content-wrapper {
+#left-face-check:checked ~ div.container main.content-wrapper {
   -webkit-transform: translate(0%) rotateY(0deg);
           transform: translate(0%) rotateY(0deg);
 }
 
-#right-face-check:checked ~ div.container div.content-wrapper {
+#right-face-check:checked ~ div.container main.content-wrapper {
   -webkit-transform: translate(-50%) rotateY(-90deg);
           transform: translate(-50%) rotateY(-90deg);
 }
 
-#right-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
+#right-face-check:checked ~ div.container aside.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
   background-color: #094873;
 }
 
-#right-face-check:checked ~ div.container div.header h1::before {
+#right-face-check:checked ~ div.container header.header h1::before {
   content: "C.V. - About me - ";
 }
 
-#left-face-check:checked ~ div.container div.content-wrapper {
+#left-face-check:checked ~ div.container main.content-wrapper {
   -webkit-transform: translate(50%) rotateY(90deg);
           transform: translate(50%) rotateY(90deg);
 }
 
-#left-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(1) > ul > li:nth-child(2) > label {
+#left-face-check:checked ~ div.container aside.sidebar > ul > li:nth-child(1) > ul > li:nth-child(2) > label {
   background-color: #094873;
 }
 
-#left-face-check:checked ~ div.container div.header h1::before {
+#left-face-check:checked ~ div.container header.header h1::before {
   content: "C.V. - About me - ";
 }
 
-#back-face-check:checked ~ div.container div.content-wrapper {
+#back-face-check:checked ~ div.container main.content-wrapper {
   -webkit-transform: translate(-50%) rotateY(-90deg) rotateY(-90deg) translate(-50%);
           transform: translate(-50%) rotateY(-90deg) rotateY(-90deg) translate(-50%);
 }
 
-#back-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(2) > ul > li:nth-child(2) > label {
+#back-face-check:checked ~ div.container aside.sidebar > ul > li:nth-child(2) > ul > li:nth-child(2) > label {
   background-color: #094873;
 }
 
-#back-face-check:checked ~ div.container div.header h1::before {
+#back-face-check:checked ~ div.container header.header h1::before {
   content: "CSS - Portfolio - ";
 }
 
-#top-face-check:checked ~ div.container div.content-wrapper {
+#top-face-check:checked ~ div.container main.content-wrapper {
   -webkit-transform: translate(0, 50%) rotatex(-90deg);
           transform: translate(0, 50%) rotatex(-90deg);
 }
 
-#top-face-check:checked ~ div.container div.sidebar > ul > li:nth-child(2) > ul > li:nth-child(1) > label {
+#top-face-check:checked ~ div.container aside.sidebar > ul > li:nth-child(2) > ul > li:nth-child(1) > label {
   background-color: #094873;
 }
 
-#top-face-check:checked ~ div.container div.header h1::before {
+#top-face-check:checked ~ div.container header.header h1::before {
   content: "JavaScript - Portfolio - ";
 }
 
-#bottom-face-check-index:checked ~ div.container div.content-wrapper {
+#bottom-face-check-index:checked ~ div.container main.content-wrapper {
   -webkit-transform: translate(0, -50%) rotatex(90deg);
           transform: translate(0, -50%) rotatex(90deg);
 }
 
-#bottom-face-check-index:checked ~ div.container div.sidebar > ul > li:nth-child(3) > ul > li:nth-child(1) > label {
+#bottom-face-check-index:checked ~ div.container aside.sidebar > ul > li:nth-child(3) > ul > li:nth-child(1) > label {
   background-color: #094873;
 }
 
-#bottom-face-check-index:checked ~ div.container div.header h1::before {
+#bottom-face-check-index:checked ~ div.container header.header h1::before {
   content: "Source - Index.html - Portfolio - ";
 }
 
-#bottom-face-check-index:checked ~ div.container div .bottom-face div.tab:nth-child(1) {
+#bottom-face-check-index:checked ~ div.container div.bottom-face div.tab:nth-child(1) {
   background-color: #1e1e1e;
   border-bottom: #1e1e1e;
   border-right: 1px solid #3f3f47;
 }
 
-#bottom-face-check-index:checked ~ div.container div #html-code-showcase {
+#bottom-face-check-index:checked ~ div.container div#html-code-showcase {
   display: block;
 }
 
-#bottom-face-check-styles:checked ~ div.container div.content-wrapper {
+#bottom-face-check-styles:checked ~ div.container main.content-wrapper {
   -webkit-transform: translate(0, -50%) rotatex(90deg);
           transform: translate(0, -50%) rotatex(90deg);
 }
 
-#bottom-face-check-styles:checked ~ div.container div.sidebar > ul > li:nth-child(3) > ul > li:nth-child(2) > label {
+#bottom-face-check-styles:checked ~ div.container aside.sidebar > ul > li:nth-child(3) > ul > li:nth-child(2) > label {
   background-color: #094873;
 }
 
-#bottom-face-check-styles:checked ~ div.container div.header h1::before {
+#bottom-face-check-styles:checked ~ div.container header.header h1::before {
   content: "Source - Styles.sass - Portfolio - ";
 }
 
-#bottom-face-check-styles:checked ~ div.container div .bottom-face div.tab:nth-child(2) {
+#bottom-face-check-styles:checked ~ div.container div.bottom-face div.tab:nth-child(2) {
   background-color: #1e1e1e;
   border-bottom: #1e1e1e;
   border-right: 1px solid #3f3f47;
   border-left: 1px solid #3f3f47;
 }
 
-#bottom-face-check-styles:checked ~ div.container div #css-code-showcase {
+#bottom-face-check-styles:checked ~ div.container div#css-code-showcase {
   display: block;
 }
 
-#bottom-face-check-main:checked ~ div.container div.content-wrapper {
+#bottom-face-check-main:checked ~ div.container main.content-wrapper {
   -webkit-transform: translate(0, -50%) rotatex(90deg);
           transform: translate(0, -50%) rotatex(90deg);
 }
 
-#bottom-face-check-main:checked ~ div.container div.sidebar > ul > li:nth-child(3) > ul > li:nth-child(3) > label {
+#bottom-face-check-main:checked ~ div.container aside.sidebar > ul > li:nth-child(3) > ul > li:nth-child(3) > label {
   background-color: #094873;
 }
 
-#bottom-face-check-main:checked ~ div.container div.header h1::before {
+#bottom-face-check-main:checked ~ div.container header.header h1::before {
   content: "Source - Main.js - Portfolio - ";
 }
 
-#bottom-face-check-main:checked ~ div.container div .bottom-face div.tab:nth-child(3) {
+#bottom-face-check-main:checked ~ div.container div.bottom-face div.tab:nth-child(3) {
   background-color: #1e1e1e;
   border-bottom: #1e1e1e;
   border-right: 1px solid #3f3f47;
   border-left: 1px solid #3f3f47;
 }
 
-#bottom-face-check-main:checked ~ div.container div #main-code-showcase {
+#bottom-face-check-main:checked ~ div.container div#main-code-showcase {
   display: block;
 }
 
@@ -731,39 +731,39 @@ ul {
       grid-template-areas: "header" "content" "footer";
 }
 
-#main-extend:checked ~ div.container div.header > label div.burger span {
+#main-extend:checked ~ div.container header.header > label div.burger span {
   -webkit-transform: none;
           transform: none;
   opacity: 1;
 }
 
-#main-extend:checked ~ div.container div.sidebar {
+#main-extend:checked ~ div.container aside.sidebar {
   display: none;
 }
 
-#about-me-extend:checked ~ div.container div.sidebar ul.main-menu ul.about-me-menu {
+#about-me-extend:checked ~ div.container aside.sidebar ul.main-menu ul.about-me-menu {
   display: none;
 }
 
-#about-me-extend:checked ~ div.container div.sidebar ul.main-menu li:nth-child(1) i {
+#about-me-extend:checked ~ div.container aside.sidebar ul.main-menu li:nth-child(1) i {
   -webkit-transform: none;
           transform: none;
 }
 
-#portfolio-extend:checked ~ div.container div.sidebar ul.main-menu ul.portfolio-menu {
+#portfolio-extend:checked ~ div.container aside.sidebar ul.main-menu ul.portfolio-menu {
   display: none;
 }
 
-#portfolio-extend:checked ~ div.container div.sidebar ul.main-menu li:nth-child(2) i {
+#portfolio-extend:checked ~ div.container aside.sidebar ul.main-menu li:nth-child(2) i {
   -webkit-transform: none;
           transform: none;
 }
 
-#source-extend:checked ~ div.container div.sidebar ul.main-menu ul.source-menu {
+#source-extend:checked ~ div.container aside.sidebar ul.main-menu ul.source-menu {
   display: none;
 }
 
-#source-extend:checked ~ div.container div.sidebar ul.main-menu li:nth-child(3) i {
+#source-extend:checked ~ div.container aside.sidebar ul.main-menu li:nth-child(3) i {
   -webkit-transform: none;
           transform: none;
 }

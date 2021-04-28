@@ -387,133 +387,133 @@ ul {
 ******************FACES BEHAVIOUR***************
 ***********************************************/
 
-#front-face-check:checked ~ div.container div {
-  &.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
+#front-face-check:checked ~ div.container {
+  & aside.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
     background-color: $menu-selected;
   }
-  &.header h1::before {
+  & header.header h1::before {
     content: "Contact - About me - ";
   }
-  &.content-wrapper {
+  & main.content-wrapper {
     transform: translate(-0%) rotateY(-0deg);
   }
 }
 
-#left-face-check:checked ~ div.container div {
-  &.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
+#left-face-check:checked ~ div.container {
+  & aside.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
     background-color: $menu-selected;
   }
-  &.header h1::before {
+  & header.header h1::before {
     content: "Contact - About me - ";
   }
-  &.content-wrapper {
+  & main.content-wrapper {
     transform: translate(-0%) rotateY(-0deg);
   }
 }
 
-#right-face-check:checked ~ div.container div {
-  &.content-wrapper {
+#right-face-check:checked ~ div.container {
+  & main.content-wrapper {
     transform: translate(-50%) rotateY(-90deg);
   }
-  &.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
+  & aside.sidebar > ul > li:nth-child(1) > ul > li:nth-child(1) > label {
     background-color: $menu-selected;
   }
-  &.header h1::before {
+  & header.header h1::before {
     content: "C.V. - About me - ";
   }
 }
-#left-face-check:checked ~ div.container div {
-  &.content-wrapper {
+#left-face-check:checked ~ div.container {
+  & main.content-wrapper {
     transform: translate(50%) rotateY(90deg);
   }
-  &.sidebar > ul > li:nth-child(1) > ul > li:nth-child(2) > label {
+  & aside.sidebar > ul > li:nth-child(1) > ul > li:nth-child(2) > label {
     background-color: $menu-selected;
   }
-  &.header h1::before {
+  & header.header h1::before {
     content: "C.V. - About me - ";
   }
 }
 
-#back-face-check:checked ~ div.container div {
-  &.content-wrapper {
+#back-face-check:checked ~ div.container {
+  & main.content-wrapper {
     transform: translate(-50%) rotateY(-90deg) rotateY(-90deg) translate(-50%);
   }
-  &.sidebar > ul > li:nth-child(2) > ul > li:nth-child(2) > label {
+  & aside.sidebar > ul > li:nth-child(2) > ul > li:nth-child(2) > label {
     background-color: $menu-selected;
   }
-  &.header h1::before {
+  & header.header h1::before {
     content: "CSS - Portfolio - ";
   }
 }
-#top-face-check:checked ~ div.container div {
-  &.content-wrapper {
+#top-face-check:checked ~ div.container {
+  & main.content-wrapper {
     transform: translate(0, 50%) rotatex(-90deg);
   }
-  &.sidebar > ul > li:nth-child(2) > ul > li:nth-child(1) > label {
+  & aside.sidebar > ul > li:nth-child(2) > ul > li:nth-child(1) > label {
     background-color: $menu-selected;
   }
-  &.header h1::before {
+  & header.header h1::before {
     content: "JavaScript - Portfolio - ";
   }
 }
-#bottom-face-check-index:checked ~ div.container div {
-  &.content-wrapper {
+#bottom-face-check-index:checked ~ div.container {
+  & main.content-wrapper {
     transform: translate(0, -50%) rotatex(90deg);
   }
-  &.sidebar > ul > li:nth-child(3) > ul > li:nth-child(1) > label {
+  & aside.sidebar > ul > li:nth-child(3) > ul > li:nth-child(1) > label {
     background-color: $menu-selected;
   }
-  &.header h1::before {
+  & header.header h1::before {
     content: "Source - Index.html - Portfolio - ";
   }
-  & .bottom-face div.tab:nth-child(1) {
+  & div.bottom-face div.tab:nth-child(1) {
     background-color: $main-bg-color;
     border-bottom: $main-bg-color;
     border-right: 1px solid $menu-hover;
   }
-  & #html-code-showcase {
+  & div#html-code-showcase {
     display: block;
   }
 }
 
-#bottom-face-check-styles:checked ~ div.container div {
-  &.content-wrapper {
+#bottom-face-check-styles:checked ~ div.container {
+  & main.content-wrapper {
     transform: translate(0, -50%) rotatex(90deg);
   }
-  &.sidebar > ul > li:nth-child(3) > ul > li:nth-child(2) > label {
+  & aside.sidebar > ul > li:nth-child(3) > ul > li:nth-child(2) > label {
     background-color: $menu-selected;
   }
-  &.header h1::before {
+  & header.header h1::before {
     content: "Source - Styles.sass - Portfolio - ";
   }
-  & .bottom-face div.tab:nth-child(2) {
+  & div.bottom-face div.tab:nth-child(2) {
     background-color: $main-bg-color;
     border-bottom: $main-bg-color;
     border-right: 1px solid $menu-hover;
     border-left: 1px solid $menu-hover;
   }
-  & #css-code-showcase {
+  & div#css-code-showcase {
     display: block;
   }
 }
 
-#bottom-face-check-main:checked ~ div.container div {
-  &.content-wrapper {
+#bottom-face-check-main:checked ~ div.container {
+  & main.content-wrapper {
     transform: translate(0, -50%) rotatex(90deg);
   }
-  &.sidebar > ul > li:nth-child(3) > ul > li:nth-child(3) > label {
+  & aside.sidebar > ul > li:nth-child(3) > ul > li:nth-child(3) > label {
     background-color: $menu-selected;
   }
-  &.header h1::before {
+  & header.header h1::before {
     content: "Source - Main.js - Portfolio - ";
   }
-  & .bottom-face div.tab:nth-child(3) {
+  & div.bottom-face div.tab:nth-child(3) {
     background-color: $main-bg-color;
     border-bottom: $main-bg-color;
     border-right: 1px solid $menu-hover;
     border-left: 1px solid $menu-hover;
   }
-  & #main-code-showcase {
+  & div#main-code-showcase {
     display: block;
   }
 }
@@ -562,15 +562,15 @@ ul {
     "header"
     "content"
     "footer";
-  & div.header > label div.burger span {
+  & header.header > label div.burger span {
     transform: none;
     opacity: 1;
   }
-  & div.sidebar {
+  & aside.sidebar {
     display: none;
   }
 }
-#about-me-extend:checked ~ div.container div.sidebar ul.main-menu {
+#about-me-extend:checked ~ div.container aside.sidebar ul.main-menu {
   & ul.about-me-menu {
     display: none;
   }
@@ -578,7 +578,7 @@ ul {
     transform: none;
   }
 }
-#portfolio-extend:checked ~ div.container div.sidebar ul.main-menu {
+#portfolio-extend:checked ~ div.container aside.sidebar ul.main-menu {
   & ul.portfolio-menu {
     display: none;
   }
@@ -586,7 +586,7 @@ ul {
     transform: none;
   }
 }
-#source-extend:checked ~ div.container div.sidebar ul.main-menu {
+#source-extend:checked ~ div.container aside.sidebar ul.main-menu {
   & ul.source-menu {
     display: none;
   }

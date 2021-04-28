@@ -15,7 +15,7 @@ const fetchSource = async (endPoint) => {
     data = escapeHtmlString(data);
     return data;
   } catch (err) {
-    console.log("error", err);
+    alert("error: " + err);
   }
 };
 Promise.all([
@@ -27,7 +27,6 @@ Promise.all([
   nodes.forEach((node, index) => {
     node.innerHTML = `<pre><code>${data[index]}</code></pre>`;
   });
-  //console.log(data, nodes);
   document.querySelectorAll("pre code").forEach((block) => {
     hljs.highlightBlock(block);
   });
