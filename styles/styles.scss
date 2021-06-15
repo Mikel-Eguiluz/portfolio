@@ -11,6 +11,12 @@ $white-text-color: #cccccc;
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
+
+  background-color: #222;
+  background-image: url("/assets/images/portfolio-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 *::-webkit-scrollbar {
   width: 0.5rem;
@@ -31,21 +37,6 @@ button {
 ul {
   margin-block-start: 0;
   margin-block-end: 0;
-}
-
-.bg-image {
-  position: fixed;
-  left: -5;
-  z-index: -10;
-  display: block;
-  width: 105%;
-  min-height: 105vh;
-  filter: blur(3px);
-  background-color: #222;
-  background-image: url("/assets/images/portfolio-background.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .box {
